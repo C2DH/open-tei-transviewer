@@ -1,0 +1,1056 @@
+.tei-viewer {
+	position:			relative;
+	font:				12px/1.4 Arial,Helvetica,Verdana,sans-serif;
+}
+
+.tei-viewer a {
+	text-decoration:	none;
+}
+
+/* Menu bar */
+
+.tei-viewer .menu-bar {
+	background-color:	#47413e;
+	height:				40px;
+	position:			relative;
+}
+
+.tei-viewer .menu-bar ul {
+	margin:				0;
+}
+
+.tei-viewer .menu-bar .navigation-tools
+,.tei-viewer .menu-bar .fac-mode
+,.tei-viewer .menu-bar .fac-display {
+	float:				left;
+	padding:			0 7px 0 6px; /*0 8px 0 7px;*/
+	background:			url("../images/sepa.png") no-repeat scroll right 2px transparent;
+}
+
+.tei-viewer .menu-bar .text-mode
+,.tei-viewer .menu-bar .text-display
+,.tei-viewer .menu-bar .text-tools
+,.tei-viewer .menu-bar .help-tools {
+	float:				right;
+	padding:			0 6px 0 7px; /*0 7px 0 8px;*/
+	background:			url("../images/sepa.png") no-repeat scroll left 2px transparent;
+}
+
+.tei-viewer .menu-bar .navigation-tools
+,.tei-viewer.transcription .menu-bar .fac-mode
+,.tei-viewer.original .menu-bar .text-tools
+,.tei-viewer.original .menu-bar .text-mode {
+	display:			none;
+}
+
+.tei-viewer.text-only .menu-bar .fac-display
+,.tei-viewer.facsimile-only .menu-bar .fac-display
+,.tei-viewer.text-only .menu-bar .text-display
+,.tei-viewer.facsimile-only .menu-bar .text-display
+,.tei-viewer.text-only .menu-bar .tei-pager
+,.tei-viewer.text-only .menu-bar .text-mode
+,.tei-viewer.text-only .menu-bar .zoomer {
+	display:			none;
+}
+
+.tei-viewer.navigation-enabled .menu-bar .navigation-tools {
+	display:			block;
+}
+	
+.tei-viewer .menu-bar .tei-pager
+,.tei-viewer .menu-bar .zoomer {
+	padding:			0 7px 0 6px; /*0 8px 0 7px;*/
+	background:			url("../images/sepa.png") no-repeat scroll right 2px transparent;
+}
+
+.tei-viewer .menu-bar .zoomer {
+	position: 			absolute;
+	top:				0;
+	left:				50%;
+	margin-left:		-140px;
+}
+
+.tei-viewer .menu-bar .tei-pager {
+	position: 			absolute;
+	top:				0;
+	left:				50%;
+	margin-left:		-33px;
+}
+
+.tei-viewer .menu-bar .zoomer:before {
+	content:			"";
+	background:			url("../images/sepa.png") no-repeat scroll left 2px transparent;
+	width:				1px;
+	height:				40px;
+	position:			absolute;
+	left:				-1px;
+	top:				0;
+}
+
+.tei-viewer .menu-bar ul li {
+	display:			inline-block;
+	list-style:			none;
+}
+
+.tei-viewer .menu-bar ul.navigation-tools li a
+,.tei-viewer .menu-bar ul.fac-mode li a
+,.tei-viewer .menu-bar ul.text-tools li a
+,.tei-viewer .menu-bar ul.help-tools li a
+,.tei-viewer .menu-bar ul.text-mode li a
+,.tei-viewer .menu-bar ul.zoomer li a {
+	display:			block;
+	height:				22px;
+	outline:			none;
+	text-indent:		-9999px;
+	margin:				9px 5px;
+} 
+
+.tei-viewer .menu-bar ul.tei-pager li a {
+	display:			block;
+	height:				12px;
+	outline:			none;
+	text-indent:		-9999px;
+	margin:				14px 5px;
+} 
+
+.tei-viewer .menu-bar ul.navigation-tools li.navigation a {
+	background:			url("../images/navigation.png") no-repeat scroll left top transparent;
+	width:				21px;
+	height:				21px;
+	margin:				9px 5px 10px 5px;
+}
+
+.tei-viewer .menu-bar ul.fac-mode li.multi-page a {
+	background:			url("../images/multi_page.png") no-repeat scroll left top transparent;
+	width:				20px;
+}
+
+.tei-viewer .menu-bar ul.fac-mode li.single-page a {
+	background:			url("../images/single_page.png") no-repeat scroll left top transparent;
+	width:				16px;
+}
+
+.tei-viewer .menu-bar ul.fac-mode li.dubble-page a {
+	background:			url("../images/dubble_page.png") no-repeat scroll left top transparent;
+	width:				31px;
+}
+
+.tei-viewer .menu-bar ul.text-mode li.linear a {
+	background:			url("../images/linear.png") no-repeat scroll left top transparent;
+	width:				16px;
+}
+
+.tei-viewer .menu-bar ul.text-mode li.diplomatic a {
+	background:			url("../images/diplomatic.png") no-repeat scroll left top transparent;
+	width:				16px;
+}
+
+.tei-viewer .menu-bar ul.text-mode li.diplomatic-responsive a {
+	background:			url("../images/diplomatic_responsive.png") no-repeat scroll left top transparent;
+	width:				16px;
+}
+
+.tei-viewer.original-transcription .menu-bar ul.text-mode li.diplomatic-responsive
+,.tei-viewer.transcription .menu-bar ul.text-mode li.diplomatic {
+	display:			none;
+}
+
+.tei-viewer .menu-bar ul.text-tools li.search a {
+	background:			url("../images/search_tool.png") no-repeat scroll left top transparent;
+	width:				24px;
+	height:				23px;
+	margin:				8px 5px 9px 5px;
+}
+
+.tei-viewer .menu-bar ul.help-tools li.help a {
+	background:			url("../images/help.png") no-repeat scroll left top transparent;
+	width:				17px;
+	height:				23px;
+	margin:				8px 5px 9px 5px;
+}
+
+.tei-viewer .menu-bar ul.zoomer li.zoom-in a {
+	background:			url("../images/zoom_in.png") no-repeat scroll left top transparent;
+	width:				19px;
+	height:				19px;
+	margin:				10px 5px 11px 5px;;
+}
+
+.tei-viewer .menu-bar ul.zoomer li.zoom-out a {
+	background:			url("../images/zoom_out.png") no-repeat scroll left top transparent;
+	width:				19px;
+	height:				19px;
+	margin:				10px 5px 11px 5px;;
+}
+
+.tei-viewer .menu-bar ul.zoomer li.zoom-reset a {
+	background:			url("../images/fit.png") no-repeat scroll left top transparent;
+	width:				22px;
+}
+
+.tei-viewer .menu-bar ul.tei-pager li.first a {
+	background:			url("../images/first.png") no-repeat scroll left top transparent;
+	width:				9px;
+}
+
+.tei-viewer .menu-bar ul.tei-pager li.previous a {
+	background:			url("../images/previous.png") no-repeat scroll left top transparent;
+	width:				8px;
+}
+
+.tei-viewer .menu-bar ul.tei-pager li.next a {
+	background:			url("../images/next.png") no-repeat scroll left top transparent;
+	width:				8px;
+}
+
+.tei-viewer .menu-bar ul.tei-pager li.last a {
+	background:			url("../images/last.png") no-repeat scroll left top transparent;
+	width:				9px;
+}
+
+.tei-viewer .menu-bar ul.zoomer li a:hover  {
+	background-position:left -19px;
+}
+
+.tei-viewer .menu-bar ul.fac-mode li a:hover
+,.tei-viewer .menu-bar ul.fac-mode li.selected a
+,.tei-viewer .menu-bar ul.text-mode li a:hover
+,.tei-viewer.linear .menu-bar ul.text-mode li.linear a
+,.tei-viewer.diplomatic .menu-bar ul.text-mode li.diplomatic a
+,.tei-viewer.diplomatic-responsive .menu-bar ul.text-mode li.diplomatic-responsive a
+,.tei-viewer .menu-bar ul.zoomer li.zoom-reset a:hover {
+	background-position:left -22px;
+}
+
+.tei-viewer .menu-bar ul.navigation-tools li a:hover
+,.tei-viewer.navigation-on .menu-bar ul.navigation-tools li a {
+	background-position:left -21px;
+}
+
+.tei-viewer .menu-bar ul.text-tools li a:hover
+,.tei-viewer .menu-bar ul.help-tools li a:hover
+,.tei-viewer.search-on .menu-bar ul.text-tools li a
+,.tei-viewer.help-on .menu-bar ul.help-tools li a {
+	background-position:left -23px;
+}
+
+.tei-viewer .menu-bar ul.tei-pager li a:hover {
+	background-position:left -12px;
+}
+
+.tei-viewer .menu-bar ul.fac-display li
+,.tei-viewer .menu-bar ul.text-display li {
+	display:			none;
+}
+
+.tei-viewer .menu-bar ul.tei-pager li.page-counter {
+	color:				white;
+	vertical-align:		top;
+}
+
+.tei-viewer .menu-bar ul.tei-pager li.page-counter .page {
+	width:				35px;
+	height:				22px;
+	padding:			0;
+	margin:				9px 0;
+	text-align:			center;
+	border:				none;
+	border-radius:		0;
+	vertical-align: 	top;
+	-moz-appearance:	textfield;	/* Hide spinner on Firefox */
+	font-size:			14px;
+}
+
+/* Hide spinner */
+.tei-viewer .menu-bar ul.tei-pager li.page-counter .page::-webkit-inner-spin-button, 
+.tei-viewer .menu-bar ul.tei-pager li.page-counter .page::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: 		none;
+    margin: 			0; 
+}
+
+.tei-viewer .menu-bar ul.tei-pager li.page-counter .count {
+	display:			inline-block;
+	width:				35px;
+	height:				22px;
+	color:				black;
+	background-color:	white;
+	margin:				9px 0;
+	text-align:			center;
+	line-height:		22px;
+}
+
+.tei-viewer.original-transcription .menu-bar ul.fac-display li.original
+,.tei-viewer.original-transcription .menu-bar ul.text-display li.transcription
+,.tei-viewer.original .menu-bar ul.fac-display li.original-transcription
+,.tei-viewer.original .menu-bar ul.text-display li.transcription
+,.tei-viewer.transcription .menu-bar ul.fac-display li.original
+,.tei-viewer.transcription .menu-bar ul.text-display li.original-transcription {
+	display:			inline-block;
+}
+
+.tei-viewer .menu-bar ul.fac-display li a
+,.tei-viewer .menu-bar ul.text-display li a {
+	color:				white;
+	background-color:	#332b2a;
+	font-size:			15px;
+	font-weight: 		bold;
+	line-height:		40px;
+	display:			block;
+	padding:			0 12px;
+} 
+
+.tei-viewer .menu-bar ul.fac-display li a:hover
+,.tei-viewer .menu-bar ul.text-display li a:hover {
+	color:				black;
+	background-color:	white;
+}
+
+.tei-viewer .tei-tooltip {
+	position:			relative;
+}
+
+.tei-viewer .tei-tooltip .tooltip-text {
+	visibility:			hidden;
+    background-color: 	black;
+    color: 				#fff;
+    padding: 			1px 7px;
+    border-radius: 		5px;
+    position: 			absolute;
+    top: 				100%;
+    margin-top:			5px;
+    z-index: 			10;
+    white-space: 		nowrap;
+    opacity: 			0;
+    transition: 		opacity 500ms;
+    text-indent:		0;
+}
+
+.tei-viewer .tei-tooltip:hover .tooltip-text {
+	visibility:			visible;
+	opacity:			1;
+}
+
+.tei-viewer .tei-tooltip .tooltip-text::after {
+    content: 			" ";
+    position: 			absolute;
+    bottom: 			100%;
+    left: 				50%;
+    margin-left: 		-5px;
+    border-width: 		5px;
+    border-style: 		solid;
+    border-color: 		transparent transparent black transparent;
+}
+
+/* Wrapper */
+
+.tei-viewer .content-wrapper {
+	position:			absolute;
+	top:				40px;
+	left:				0;
+	right:				0;
+	bottom:				0;
+}
+
+.tei-viewer.navigation-on .content-wrapper {
+	left:				200px;
+}
+
+.tei-viewer.search-on .content-wrapper {
+	right:				200px;
+}
+
+.tei-viewer.help-on .content-wrapper {
+	right:				251px;
+}
+
+.tei-viewer.search-on.help-on .content-wrapper {
+	right:				451px;
+}
+
+/* Loader */
+
+.tei-viewer .content-wrapper .loader-processing {
+	background:			url("../images/loading.gif") no-repeat scroll center center #FFFFFF;
+	width:				100%;
+	position:			absolute;
+	top:				0;
+	left:				0;
+	bottom:				0;
+	z-index:			1;
+}
+
+/* Facsimile */
+
+.tei-viewer .content-wrapper .doc-part-fac {
+	width:				50%;
+	float:				left;
+	height:				100%;
+	position:			relative;
+}
+
+.tei-viewer.original .doc-part-fac {
+	width:				100%;
+}
+
+.tei-viewer.transcription .doc-part-fac {
+	display:			none;
+}
+
+.tei-viewer #BRcontainer {
+    top:				0;
+    bottom:				0;
+    width:				100%;
+    z-index: 			1;
+    overflow-x:			auto;
+    overflow-y:			scroll;
+    position:			absolute;
+	height:				100%;
+    background-color: 	#9A9B9D;
+}
+
+.tei-viewer .BRpagediv1up {
+    overflow:			hidden;
+    cursor: 			move;
+    background-color: 	#FEFDEB;
+    -webkit-box-shadow: 1px 1px 2px #333;
+    -moz-box-shadow: 	1px 1px 2px #333;
+    box-shadow: 		1px 1px 2px #333;
+}
+
+.tei-viewer .BRpagedivthumb {
+    background-color: 	#FEFDEB;
+    overflow:			hidden;
+    -webkit-box-shadow: 1px 1px 2px #333;
+    -moz-box-shadow: 	1px 1px 2px #333;
+    box-shadow: 		1px 1px 2px #333;
+}
+
+.tei-viewer .BRpagediv2up {
+    background-color: 	rgb(234, 226, 205);
+    overflow:			hidden;
+}
+
+.tei-viewer #BRbookcover {
+    position: 			absolute;
+    background-image: 	url(images/back_pages.png);
+    -moz-box-shadow: 	1px 0 10px #111;
+    -webkit-box-shadow: 1px 0 10px #111;
+    box-shadow: 		1px 0 10px #111;
+}
+
+.tei-viewer .BRpageimage {
+    /* Bird Book */
+    background-color: 	#FEFDEB;
+}
+
+.tei-viewer .BRemptypage {
+    background-color: 	#EFEFEF;
+}
+
+/* Disable selection on Firefox and WebKit */
+.tei-viewer .BRnoselect {
+    -moz-user-select: 	none;
+    -webkit-user-select:none;
+    -webkit-user-drag: 	none;
+}
+
+.tei-viewer .BRleafEdgeR {
+    background: 		transparent url(../images/back_pages.png) repeat scroll 0% 0%;
+    position: 			absolute;
+}
+
+.tei-viewer .BRleafEdgeL {
+    background: 		transparent url(../images/back_pages.png) repeat scroll 0% 0%;
+    position: 			absolute;
+}
+
+.tei-viewer .BRleafEdgeTmp {
+    border-style: 		solid none solid solid;
+    border-color: 		rgb(51, 51, 34);
+    border-width: 		1px 0px 1px 1px;
+    background: 		transparent url(../images/back_pages.png) repeat scroll 0% 0%;
+    position: 			absolute;
+}
+
+.tei-viewer #BRgutter {
+    position: 			absolute;
+    z-index: 			6;
+    background: 		transparent url(../images/booksplit.png) repeat scroll 0% 0%;
+}
+
+/* Text */
+
+.tei-viewer .content-wrapper .doc-part-text {
+	width:				50%;
+	float:				left;
+	height:				100%;
+	overflow-y:			scroll;
+}
+
+.tei-viewer.facsimile-text .doc-part-text {
+    background-color: 	#9A9B9D;
+}
+
+.tei-viewer.transcription .doc-part-text {
+	width:				100%;
+}
+
+.tei-viewer.original .doc-part-text {
+	display:			none;
+}
+
+.tei-viewer .doc-part-text .text_img {
+    padding: 			8px 30px 10px;
+    position:			relative;
+}
+
+.tei-viewer.facsimile-text .doc-part-text .text_img {
+    background: 		#FFFFFF;
+    font-size: 			12px;
+    box-shadow: 		1px 1px 2px #333;
+    line-height: 		normal;
+    margin:				0 auto;
+}
+
+.tei-viewer.diplomatic-responsive .doc-part-text .line_break_del
+,.tei-viewer.diplomatic-responsive .doc-part-text .hyphen
+,.tei-viewer.diplomatic-responsive .doc-part-text .break_no {	
+	display:			none;
+}
+
+.tei-viewer.linear .doc-part-text h1
+,.tei-viewer.linear .doc-part-text h2
+,.tei-viewer.linear .doc-part-text h3
+,.tei-viewer.linear .doc-part-text h4 {
+	font-weight: 		bold;
+}
+
+.tei-viewer.facsimile-text .doc-part-text .text_img hr {
+	border-style:		inset;
+	margin:				7px 0;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom-4 .text_img {
+	font-size:			8px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom-4 .text_img {
+	width:				300px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom-3 .text_img {
+	font-size:			9px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom-3 .text_img {
+	width:				320px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom-2 .text_img {
+	font-size:			10px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom-2 .text_img {
+	width:				340px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom-1 .text_img {
+	font-size:			11px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom-1 .text_img {
+	width:				370px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom0 .text_img {
+	font-size:			12px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom0 .text_img {
+	width:				410px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom1 .text_img {
+	font-size:			13px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom1 .text_img {
+	width:				420px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom2 .text_img {
+	font-size:			14px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom2 .text_img {
+	width:				440px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom3 .text_img {
+	font-size:			16px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom3 .text_img {
+	width:				500px;
+}
+
+.tei-viewer.facsimile-text .doc-part-text.zoom4 .text_img {
+	font-size:			20px;
+}
+
+.tei-viewer.facsimile-text.diplomatic .doc-part-text.zoom4 .text_img {
+	width:				600px;
+}
+
+.tei-viewer .doc-part-text .highlight {
+	background-color:	transparent;
+}
+
+.tei-viewer.search-on .doc-part-text.highlight-person .type§person.highlight
+,.tei-viewer.search-on .doc-part-text.highlight-person .type§person .highlight {
+	background-color: 	#b8d3c8;
+}
+
+.tei-viewer.search-on .doc-part-text.highlight-org .type§org.highlight
+,.tei-viewer.search-on .doc-part-text.highlight-org .type§org .highlight {
+	background-color: 	#e7c6af;
+}
+
+.tei-viewer.search-on .doc-part-text.highlight-place .type§place.highlight
+,.tei-viewer.search-on .doc-part-text.highlight-place .type§place .highlight {
+	background-color: 	#c3c9d7;
+}
+
+.tei-viewer.search-on .doc-part-text.highlight-product .type§product.highlight
+,.tei-viewer.search-on .doc-part-text.highlight-product .type§product .highlight {
+	background-color: 	#d4d7c3;
+}
+
+.tei-viewer.search-on .doc-part-text.highlight-event .type§event.highlight
+,.tei-viewer.search-on .doc-part-text.highlight-event .type§event .highlight {
+	background-color: 	#d7c3d6;
+}
+
+.tei-viewer.search-on .doc-part-text.highlight-function .type§function.highlight
+,.tei-viewer.search-on .doc-part-text.highlight-function .type§function .highlight {
+	background-color: 	#d7c4c3;
+}
+
+.tei-viewer.search-on .doc-part-text.highlight-date .date.highlight
+,.tei-viewer.search-on .doc-part-text.highlight-date .date .highlight {
+	background-color: 	#ccd7c3;
+}
+
+.tei-viewer.search-on .doc-part-text .highlight {
+	background-color:	yellow;
+	font-weight: 		normal;
+}
+
+.tei-viewer.search-on .doc-part-text .selected
+,.tei-viewer.search-on .doc-part-text .selected .highlight {
+	background-color:	#acd28c !important;
+}
+
+/* Navigation box */
+
+.tei-viewer .navigation-box {
+	position:			absolute;
+	left:				0;
+	width:				180px;
+	top:				40px;
+	bottom:				0;
+	background-color:	#47413e;
+	border-top:			1px dotted;
+	color:				white;
+	padding:			10px;
+	display:			none;
+	text-align:			left;
+	overflow-y:			auto;
+}
+
+.tei-viewer.navigation-on .navigation-box {
+	display:			block;
+}
+
+.tei-viewer .navigation-box ul {
+	margin:				0;
+}
+
+.tei-viewer .navigation-box ul li.h1 {
+	list-style:			none;
+}
+
+.tei-viewer .navigation-box ul li.h2 {
+	margin-left:		20px;
+}
+
+.tei-viewer .navigation-box ul li.h3 {
+	margin-left:		40px;
+}
+
+.tei-viewer .navigation-box ul li.h4 {
+	margin-left:		60px;
+}
+
+.tei-viewer .navigation-box ul li a {
+	color:				white;
+	display:			block;
+}
+
+.tei-viewer .navigation-box ul li a:hover {
+	color:				#58A618;
+}
+
+/* Search tool */
+
+.tei-viewer .search-box {
+	position:			absolute;
+	right:				0;
+	width:				180px;
+	top:				40px;
+	bottom:				0;
+	background-color:	#47413e;
+	border-top:			1px dotted;
+	color:				white;
+	padding:			10px;
+	display:			none;
+	text-align:			left;
+}
+
+.tei-viewer.help-on .search-box {
+	right:				251px;
+}
+
+.tei-viewer.search-on .search-box {
+	display:			block;
+}
+
+.tei-viewer .search-box .search-form {
+	float:				left;
+	margin-bottom:		10px;
+}
+
+.tei-viewer .search-box .search-form .search-input {
+	background-color:	transparent;
+	padding:			0;
+	width:				120px;
+	margin-bottom:		10px;
+	color:				white;
+	border:				none;
+	box-shadow:			none;
+	border-bottom:		1px solid #cccccc;
+	vertical-align: 	top;
+}
+
+.tei-viewer .search-box .search-form .search-input:focus {
+	box-shadow:			none;
+	border-color:		#58A618;
+	outline:			none;
+}
+
+.tei-viewer .search-box .search-form.no-match .search-input:focus {
+	border-color:		#ff6666;
+}
+
+.tei-viewer .search-box .search-button {
+	height:				16px;
+	width:				16px;
+	margin:				2px 9px 0 0;
+	background:			url("../images/search.png") no-repeat scroll left top transparent;
+	border:				0;
+	text-indent: 		-9999px;
+} 
+
+.tei-viewer .search-box .previous
+,.tei-viewer .search-box .next {
+	display:			inline-block;
+	height:				14px;
+	width:				14px;
+	outline:			none;
+	text-indent:		-9999px;
+	margin-top:			3px;
+}
+
+.tei-viewer .search-box .previous {
+	background:			url("../images/up.png") no-repeat scroll left top transparent;
+}
+
+.tei-viewer .search-box .next {
+	background:			url("../images/down.png") no-repeat scroll left top transparent;
+}
+
+.tei-viewer .search-box .search-button:hover {
+	background-position:left -16px;
+}
+
+.tei-viewer .search-box .previous:hover
+,.tei-viewer .search-box .next:hover {
+	background-position:left -14px;
+}
+
+.tei-viewer .search-box .disabled {
+	opacity:			0.5;
+	cursor: 			default;
+}
+
+.tei-viewer .search-box .disabled:hover {
+	background-position:left top;
+}
+
+.tei-viewer .search-box ul {
+	margin:				0;
+	padding:			0;
+}
+
+.tei-viewer .search-box ul.tabs {
+	clear:				both;
+}
+
+.tei-viewer .search-box ul li {
+	list-style:			none;
+}
+
+.tei-viewer .search-box ul.tabs li {
+	line-height:		30px;
+}
+
+.tei-viewer .search-box ul.tabs li:hover {
+	background-color:	#403a38;
+}
+
+.tei-viewer .search-box ul.tabs li a.name {
+	display:			inline-block;
+	padding-left:		20px;
+	color:				white;
+	line-height:		12px;
+	background:			url("../images/next.png") no-repeat scroll 2px top transparent;
+	outline:			none;
+}
+
+.tei-viewer .search-box ul.tabs li a.name:hover {
+	background-position:2px -12px;
+	color:				#58A618;
+}
+
+.tei-viewer .search-box ul.tabs li.open a.name {
+	line-height:		8px;
+	background:			url("../images/open.png") no-repeat scroll left top transparent;
+}
+
+.tei-viewer .search-box ul.tabs li.open a.name:hover {
+	background-position:left -8px;
+}
+
+.tei-viewer .search-box ul.tabs li ul.entities {
+	max-height:			0;
+	overflow-y:			hidden;
+	transition:			max-height 500ms;
+}
+
+.tei-viewer .search-box ul.tabs li.open ul.entities {
+	max-height:			270px;
+	overflow-y:			auto;
+}
+
+.tei-viewer .search-box ul.tabs li ul.entities li.entity {
+	background-color:	white;
+	line-height:		14px;
+}
+
+.tei-viewer .search-box ul.tabs li ul.entities li.entity:nth-child(2n) {
+	background-color:	#f2efef;
+}
+
+.tei-viewer .search-box ul.tabs li ul.entities li.entity:hover
+,.tei-viewer .search-box ul.tabs li ul.entities li.entity.selected {
+	background-color:	#90c465;
+}
+
+.tei-viewer .search-box ul.tabs li ul.entities li.entity a {
+	display:			block;
+	color:				#414040;
+	font-size:			10px;
+	font-weight:		bold;
+	padding:			2px;
+	outline:			none;
+}
+
+.tei-viewer .search-box ul.tabs li a.switch {
+	float:				right;
+	outline:			none;
+	text-indent:		-9999px;
+	width:				25px;
+	height:				14px;
+	border:				1px solid #fff;
+	border-radius:		5px;
+	margin:				7px 0;
+	position:			relative;
+    transition: 		background-color 500ms;
+	background-color: 	#47413e;	/* IE7 trick */
+} 
+
+.tei-viewer .search-box ul.tabs li a.switch:after {
+	position:			absolute;
+	content:			"";
+	width:				10px;
+	height:				10px;
+	top:				1px;
+	left:				1px;
+	border:				1px solid #fff;
+	border-radius:		50%;
+	background-color:	#47413e;
+    transition: 		left 200ms;
+}
+
+.tei-viewer .search-box ul.tabs li.person.switch-on a.switch {
+	background-color: 	#b8d3c8; /*#72A891;*/
+}
+
+.tei-viewer .search-box ul.tabs li.org.switch-on a.switch {
+	background-color: 	#e7c6af; /*#CF8D5F;*/
+}
+
+.tei-viewer .search-box ul.tabs li.place.switch-on a.switch {
+	background-color: 	#c3c9d7; /*#8793AF;*/
+}
+
+.tei-viewer .search-box ul.tabs li.product.switch-on a.switch {
+	background-color: 	#d4d7c3;
+}
+
+.tei-viewer .search-box ul.tabs li.event.switch-on a.switch {
+	background-color: 	#d7c3d6;
+}
+
+.tei-viewer .search-box ul.tabs li.function.switch-on a.switch {
+	background-color: 	#d7c4c3;
+}
+
+.tei-viewer .search-box ul.tabs li.date.switch-on a.switch {
+	background-color: 	#ccd7c3;
+}
+
+.tei-viewer .search-box ul.tabs li.switch-on a.switch:after {
+	left:				12px;			
+}
+
+/* Navigation box */
+
+.tei-viewer .help-box {
+	position:			absolute;
+	right:				0;
+	width:				230px;
+	top:				40px;
+	bottom:				0;
+	background-color:	#47413e;
+	border-top:			1px dotted;
+	color:				white;
+	padding:			10px;
+	display:			none;
+	text-align:			left;
+	overflow-y:			auto;
+	line-height:		normal;
+}
+
+.tei-viewer.help-on .help-box {
+	display:			block;
+}
+
+.tei-viewer.search-on .help-box {
+	border-left:		1px dotted;
+}
+
+.tei-viewer .help-box .help-text-wrapper {
+	padding:			5px;
+	border:				1px solid white;
+	min-height:			150px;
+	position:			relative;
+	margin:				10px 0;
+}
+
+.tei-viewer .help-box .help-text-wrapper .placeholder {
+	position:			absolute;
+	color:				#cccccc;
+	text-align:			center;
+	left:				20px;
+	top:				50%;
+	right:				20px;
+	margin-top:			-20px;
+}
+
+.tei-viewer .help-box .help-text-wrapper .help-text {
+	opacity:			0;
+	transition:			opacity 500ms;
+}
+
+.tei-viewer.active-help-on .help-box .help-text-wrapper .help-text {
+	opacity:			1;
+}
+
+.tei-viewer .help-box .help-text-wrapper .help-text .name {
+	font-weight: 		bold;
+}
+
+.tei-viewer .help-box .help-text-wrapper .help-text div {
+	margin-bottom:		5px;
+}
+
+.tei-viewer .help-box .reference {
+	margin-top:			10px;
+}
+
+.tei-viewer .help-box .reference a.name {
+	display:			inline-block;
+	padding-left:		20px;
+	color:				white;
+	line-height:		12px;
+	background:			url("../images/next.png") no-repeat scroll 2px top transparent;
+	outline:			none;
+}
+
+.tei-viewer .help-box .reference a.name:hover {
+	background-position:2px -12px;
+	color:				#58A618;
+}
+
+.tei-viewer .help-box .reference.open a.name {
+	line-height:		8px;
+	background:			url("../images/open.png") no-repeat scroll left top transparent;
+}
+
+.tei-viewer .help-box .reference.open a.name:hover {
+	background-position:left -8px;
+}
+
+.tei-viewer .help-box .reference ul.reference-list {
+	max-height:			0;
+	overflow-y:			hidden;
+	transition:			max-height 500ms;
+	margin:				0;
+	margin-top:			10px;
+}
+
+.tei-viewer .help-box .reference.open ul.reference-list {
+	max-height:			500px;
+}
+
+.tei-viewer .help-box .reference ul.reference-list li {
+	list-style:			none;
+	line-height:		normal;
+}
+
+.tei-viewer .help-box .reference ul.reference-list li .name {
+	font-weight:		bold;
+}
+
+.tei-viewer .help-box .reference ul.reference-list li a {
+	color:				white;
+	display:			block;
+	text-decoration: 	underline;
+	word-break:			break-all;
+}
+
+.tei-viewer .help-box .reference ul.reference-list li a:hover {
+	color:				#58A618;
+}

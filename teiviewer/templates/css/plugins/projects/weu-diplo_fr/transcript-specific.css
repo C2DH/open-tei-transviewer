@@ -1,0 +1,434 @@
+.tei-viewer.facsimile-text.diplomatic
+, .tei-viewer.facsimile-text.diplomatic-responsive {
+  /*CSS for project specific transcriptions rendering.*/
+  /* General, font size*/
+  /* Heading */
+  /* Paragraph */
+  /* Header, footer */
+  /* Footer */
+  /* Header */
+  /* Footer */
+  /* Hyphen at the end of line */
+  /*.break_no::before{
+     content: "-";
+     display: inline;
+   }*/
+  /* span.w {
+       hyphens: manual;
+   }*/ }
+  .tei-viewer.facsimile-text.diplomatic
+  #text h1,
+  .tei-viewer.facsimile-text.diplomatic
+  #text h2,
+  .tei-viewer.facsimile-text.diplomatic
+  #text h3,
+  .tei-viewer.facsimile-text.diplomatic
+  #text h4,
+  .tei-viewer.facsimile-text.diplomatic
+  #text p,
+  .tei-viewer.facsimile-text.diplomatic
+  #text table,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.catch,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.footer,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.annex,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§archiv_num,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§availb_date,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§confid_stamp,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§doc_vers,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§exp_no,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§file_no,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§orig_date,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header.corresp§orig_lang,
+  .tei-viewer.facsimile-text.diplomatic
+  #text span.header#unknown
+  #text span.pageNum, .tei-viewer.facsimile-text.diplomatic-responsive #text h1,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text h3,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text h4,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text p,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text table,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.catch,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.footer,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.annex,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§archiv_num,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§availb_date,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§confid_stamp,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§doc_vers,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§exp_no,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§file_no,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§orig_date,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header.corresp§orig_lang,
+  .tei-viewer.facsimile-text.diplomatic-responsive #text span.header#unknown
+  #text span.pageNum {
+    font-size: 88%;
+    font-size-adjust: 0.5; }
+  .tei-viewer.facsimile-text.diplomatic
+  h1, .tei-viewer.facsimile-text.diplomatic-responsive h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: medium;
+    font-weight: normal; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*=vo-3docs_OTAN-UEO_68_FR] h1, .tei-viewer.facsimile-text.diplomatic-responsive [id*=vo-3docs_OTAN-UEO_68_FR] h1 {
+    text-decoration: none !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*=vo-C-58] h1, .tei-viewer.facsimile-text.diplomatic
+  [id*=vo-CR-7] h1, .tei-viewer.facsimile-text.diplomatic
+  [id*=vo-CR_58] h1, .tei-viewer.facsimile-text.diplomatic-responsive [id*=vo-C-58] h1, .tei-viewer.facsimile-text.diplomatic-responsive [id*=vo-CR-7] h1, .tei-viewer.facsimile-text.diplomatic-responsive [id*=vo-CR_58] h1 {
+    text-align: left; }
+  .tei-viewer.facsimile-text.diplomatic
+  h3,
+  .tei-viewer.facsimile-text.diplomatic
+  h4, .tei-viewer.facsimile-text.diplomatic-responsive h3,
+  .tei-viewer.facsimile-text.diplomatic-responsive h4 {
+    text-decoration: underline;
+    text-align: left;
+    font-size: medium;
+    font-weight: normal; }
+  .tei-viewer.facsimile-text.diplomatic
+  h4, .tei-viewer.facsimile-text.diplomatic-responsive h4 {
+    text-indent: 30px; }
+  .tei-viewer.facsimile-text.diplomatic
+  .minutes h2,
+  .tei-viewer.facsimile-text.diplomatic
+  .memorandum h2,
+  .tei-viewer.facsimile-text.diplomatic
+  .study h2, .tei-viewer.facsimile-text.diplomatic-responsive .minutes h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive .memorandum h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive .study h2 {
+    text-decoration: underline;
+    text-align: left;
+    font-size: medium;
+    font-weight: normal; }
+  .tei-viewer.facsimile-text.diplomatic
+  .note h2, .tei-viewer.facsimile-text.diplomatic-responsive .note h2 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: medium;
+    font-weight: normal; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-note_cont_atom"] h2,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-PWG_A_2"] h2,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-PWG_E"] h2, .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-note_cont_atom"] h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-PWG_A_2"] h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-PWG_E"] h2 {
+    text-align: left !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-SAC_58_D_111"] span.header.corresp§availb_date + br + h1 + div h2,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-SAC_58_D_111"] span.header.corresp§doc_ref + br + h1 + div h2,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-PWG_E"] span.header.corresp§availb_date + br + h1 + div h2,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-PWG_E"] span.header.corresp§doc_ref + br + h1 + div h2, .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-SAC_58_D_111"] span.header.corresp§availb_date + br + h1 + div h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-SAC_58_D_111"] span.header.corresp§doc_ref + br + h1 + div h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-PWG_E"] span.header.corresp§availb_date + br + h1 + div h2,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-PWG_E"] span.header.corresp§doc_ref + br + h1 + div h2 {
+    text-align: center !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  h1.sub_head, .tei-viewer.facsimile-text.diplomatic
+  h2.sub_head, .tei-viewer.facsimile-text.diplomatic
+  h3.sub_head, .tei-viewer.facsimile-text.diplomatic
+  h4.sub_head, .tei-viewer.facsimile-text.diplomatic-responsive h1.sub_head, .tei-viewer.facsimile-text.diplomatic-responsive h2.sub_head, .tei-viewer.facsimile-text.diplomatic-responsive h3.sub_head, .tei-viewer.facsimile-text.diplomatic-responsive h4.sub_head {
+    text-decoration: none !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  p, .tei-viewer.facsimile-text.diplomatic-responsive p {
+    text-indent: 30px; }
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§arrived_stamp,
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§classif_stamp,
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§classif_date,
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§orig_date,
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§orig_place,
+  .tei-viewer.facsimile-text.diplomatic
+  p.separator, .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§arrived_stamp,
+  .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§classif_stamp,
+  .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§classif_date,
+  .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§orig_date,
+  .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§orig_place,
+  .tei-viewer.facsimile-text.diplomatic-responsive p.separator {
+    text-indent: 0; }
+  .tei-viewer.facsimile-text.diplomatic
+  p.separator, .tei-viewer.facsimile-text.diplomatic-responsive p.separator {
+    text-align: center; }
+  .tei-viewer.facsimile-text.diplomatic
+  p + table, .tei-viewer.facsimile-text.diplomatic-responsive p + table {
+    text-indent: 50px; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-CR-57"] p.corresp§doc_ref, .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-CR-57"] p.corresp§doc_ref {
+    text-align: right; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-CR-6"] p.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-PWG_CR_II"] p.corresp§orig_date, .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-CR-6"] p.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-PWG_CR_II"] p.corresp§orig_date {
+    text-align: center; }
+  .tei-viewer.facsimile-text.diplomatic
+  p span.catch,
+  .tei-viewer.facsimile-text.diplomatic
+  p span.footer,
+  .tei-viewer.facsimile-text.diplomatic
+  p span.pageNum,
+  .tei-viewer.facsimile-text.diplomatic
+  p span.header, .tei-viewer.facsimile-text.diplomatic-responsive p span.catch,
+  .tei-viewer.facsimile-text.diplomatic-responsive p span.footer,
+  .tei-viewer.facsimile-text.diplomatic-responsive p span.pageNum,
+  .tei-viewer.facsimile-text.diplomatic-responsive p span.header {
+    font-size: 100% !important;
+    text-indent: 0 !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.catch,
+  .tei-viewer.facsimile-text.diplomatic
+  span.footer,
+  .tei-viewer.facsimile-text.diplomatic
+  span.pageNum,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.annex,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§arch_num,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§availb_date,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§doc_auth,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§doc_vers,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§exp_no,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§file_no,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§orig_date,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§orig_lang,
+  .tei-viewer.facsimile-text.diplomatic
+  span.header#unknown, .tei-viewer.facsimile-text.diplomatic-responsive span.catch,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.footer,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.pageNum,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.annex,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§arch_num,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§availb_date,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§doc_auth,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§doc_vers,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§exp_no,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§file_no,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§orig_date,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§orig_lang,
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header#unknown {
+    margin-top: -4px;
+    margin-bottom: -4px;
+    display: block; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-C_61"] span.footer.corresp§confid_stamp,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-C_61"] span.header.corresp§confid_stamp, .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-C_61"] span.footer.corresp§confid_stamp,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-C_61"] span.header.corresp§confid_stamp {
+    color: black !important;
+    display: block; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.footer.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive span.footer.corresp§confid_stat {
+    text-decoration: underline; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="SAC"] span.footer.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive [id*="SAC"] span.footer.corresp§confid_stat {
+    text-align: left !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§doc_auth, .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§doc_auth {
+    font-size: large;
+    font-size-adjust: 0.5; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§doc_auth + br + span.header.corresp§doc_auth, .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§doc_auth + br + span.header.corresp§doc_auth {
+    font-size: medium;
+    font-size-adjust: 0.5; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="note_cont_atom_UK"] span.header.corresp§doc_auth, .tei-viewer.facsimile-text.diplomatic-responsive [id*="note_cont_atom_UK"] span.header.corresp§doc_auth {
+    font-size: medium !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§doc_auth + br + span.header.corresp§doc_auth + br + span.header.corresp§doc_auth, .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§doc_auth + br + span.header.corresp§doc_auth + br + span.header.corresp§doc_auth {
+    font-size: x-small;
+    font-size-adjust: 0.5; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="note"] span.header.corresp§doc_auth, .tei-viewer.facsimile-text.diplomatic-responsive [id*="note"] span.header.corresp§doc_auth {
+    text-align: left !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  .note[id*="vo-C"] span.header.corresp§availb_date,
+  .tei-viewer.facsimile-text.diplomatic
+  .note[id*="vo-WPM"] span.header.corresp§availb_date, .tei-viewer.facsimile-text.diplomatic-responsive .note[id*="vo-C"] span.header.corresp§availb_date,
+  .tei-viewer.facsimile-text.diplomatic-responsive .note[id*="vo-WPM"] span.header.corresp§availb_date {
+    text-decoration: underline; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§confid_stat {
+    text-align: right !important;
+    text-decoration: underline; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="GTPSA"] span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="SAC"] span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="PWG"] span.header.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive [id*="GTPSA"] span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="SAC"] span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="PWG"] span.header.corresp§confid_stat {
+    text-align: left !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  .note span.header.corresp§doc_auth + br + span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic
+  .note span.header.corresp§arrived_stamp + br + span.header.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive .note span.header.corresp§doc_auth + br + span.header.corresp§confid_stat,
+  .tei-viewer.facsimile-text.diplomatic-responsive .note span.header.corresp§arrived_stamp + br + span.header.corresp§confid_stat {
+    text-align: left !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="note_cont_atom_UK"] span.header.corresp§doc_auth + br + span.header.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive [id*="note_cont_atom_UK"] span.header.corresp§doc_auth + br + span.header.corresp§confid_stat {
+    text-align: right !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="note_avril"] br.change_page[id="page_1"] + span.header.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive [id*="note_avril"] br.change_page[id="page_1"] + span.header.corresp§confid_stat {
+    text-align: left !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="note_avril"] span.header.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive [id*="note_avril"] span.header.corresp§confid_stat {
+    text-decoration: none !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  .study span.header.corresp§confid_stat, .tei-viewer.facsimile-text.diplomatic-responsive .study span.header.corresp§confid_stat {
+    text-decoration: none; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-C-"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-C_"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-CR_58"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-WPM"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-CR-7"] span.header.corresp§confid_stat + br + span.header.corresp§doc_ref, .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-C-"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-C_"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-CR_58"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-WPM"] span.header.corresp§doc_ref,
+  .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-CR-7"] span.header.corresp§confid_stat + br + span.header.corresp§doc_ref {
+    text-decoration: underline; }
+  .tei-viewer.facsimile-text.diplomatic
+  .note[id*="vo-C"] span.header.corresp§orig_lang,
+  .tei-viewer.facsimile-text.diplomatic
+  .note[id*="vo-WPM"] span.header.corresp§orig_lang, .tei-viewer.facsimile-text.diplomatic-responsive .note[id*="vo-C"] span.header.corresp§orig_lang,
+  .tei-viewer.facsimile-text.diplomatic-responsive .note[id*="vo-WPM"] span.header.corresp§orig_lang {
+    text-align: left !important; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§classif_stamp[style~="color:red"],
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§classif_stamp[style~="color:red"], .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§classif_stamp[style~="color:red"],
+  .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§classif_stamp[style~="color:red"] {
+    border: 1px solid red;
+    padding: 1px;
+    margin-left: 10%;
+    display: inline-block; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§confid_stamp[style~="color:black"],
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§arrived_stamp[style~="color:black"], .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§confid_stamp[style~="color:black"],
+  .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§arrived_stamp[style~="color:black"] {
+    border: 1px solid black;
+    padding: 1px;
+    margin-bottom: 8px;
+    display: inline-block; }
+  .tei-viewer.facsimile-text.diplomatic
+  p.corresp§arrived_stamp[style~="color:black"], .tei-viewer.facsimile-text.diplomatic-responsive p.corresp§arrived_stamp[style~="color:black"] {
+    text-decoration: underline;
+    border: 1px solid black;
+    padding: 1px;
+    margin-bottom: 8px;
+    margin-left: 15%;
+    display: inline-block; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="PWG"] span.header.corresp§confid_stamp[style~="color:red"], .tei-viewer.facsimile-text.diplomatic
+  [id*="GTPSA"] span.header.corresp§confid_stamp[style~="color:red"], .tei-viewer.facsimile-text.diplomatic-responsive [id*="PWG"] span.header.corresp§confid_stamp[style~="color:red"], .tei-viewer.facsimile-text.diplomatic-responsive [id*="GTPSA"] span.header.corresp§confid_stamp[style~="color:red"] {
+    text-align: left;
+    border: 1px solid red;
+    padding: 1px;
+    margin-bottom: 8px;
+    display: inline-block; }
+  .tei-viewer.facsimile-text.diplomatic
+  [id*="vo-CR"] span.header.corresp§confid_stamp, .tei-viewer.facsimile-text.diplomatic-responsive [id*="vo-CR"] span.header.corresp§confid_stamp {
+    display: block; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§doc_vers, .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§doc_vers {
+    text-decoration: underline; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.header.corresp§memo_note, .tei-viewer.facsimile-text.diplomatic-responsive span.header.corresp§memo_note {
+    display: block; }
+  .tei-viewer.facsimile-text.diplomatic
+  span.footer + br + hr.footnote_sep, .tei-viewer.facsimile-text.diplomatic-responsive span.footer + br + hr.footnote_sep {
+    display: none; }
+
+.tei-viewer.facsimile-text.linear {
+  /*CSS for project specific transcriptions rendering.*/
+  /* General, font size*/
+  /* Heading */
+  /* Paragraph */
+  /* Notes */
+  /* Line breaks and hyphens*/ }
+  .tei-viewer.facsimile-text.linear #text h1,
+  .tei-viewer.facsimile-text.linear #text h2,
+  .tei-viewer.facsimile-text.linear #text h3,
+  .tei-viewer.facsimile-text.linear #text h4,
+  .tei-viewer.facsimile-text.linear #text li,
+  .tei-viewer.facsimile-text.linear #text note,
+  .tei-viewer.facsimile-text.linear #text p,
+  .tei-viewer.facsimile-text.linear #text table,
+  .tei-viewer.facsimile-text.linear #text span.catch,
+  .tei-viewer.facsimile-text.linear #text span.footer,
+  .tei-viewer.facsimile-text.linear #text span.header,
+  .tei-viewer.facsimile-text.linear #text span.pageNum {
+    font-size: 88%;
+    font-size-adjust: 0.5;
+    color: black !important; }
+  .tei-viewer.facsimile-text.linear h1 {
+    text-align: left !important;
+    font-size: medium; }
+  .tei-viewer.facsimile-text.linear h2,
+  .tei-viewer.facsimile-text.linear h3,
+  .tei-viewer.facsimile-text.linear h4 {
+    text-align: left;
+    font-size: medium; }
+  .tei-viewer.facsimile-text.linear p {
+    text-indent: 0px; }
+  .tei-viewer.facsimile-text.linear p span.catch,
+  .tei-viewer.facsimile-text.linear p span.footer,
+  .tei-viewer.facsimile-text.linear p span.pageNum,
+  .tei-viewer.facsimile-text.linear p span.header {
+    font-size: 100% !important; }
+  .tei-viewer.facsimile-text.linear span.note {
+    /*border:1px solid gray;
+    text-align:left !important;*/
+    font-size: x-small;
+    color: gray;
+    font-size-adjust: 0.5;
+    display: block !important; }
+  .tei-viewer.facsimile-text.linear br.line_break_del, .tei-viewer.facsimile-text.linear br.break_no, .tei-viewer.facsimile-text.linear span.hyphen {
+    display: none; }
+

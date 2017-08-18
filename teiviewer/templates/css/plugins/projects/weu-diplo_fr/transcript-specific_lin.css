@@ -1,0 +1,64 @@
+/*CSS for project specific transcriptions rendering.*/
+
+/* General, font size*/
+
+#text h1,
+#text h2,
+#text h3,
+#text h4,
+#text li,
+#text note,
+#text p, 
+#text table,
+#text span.catch,
+#text span.footer,
+#text span.header,
+#text span.pageNum
+{
+    font-size:88%;
+    font-size-adjust:0.5;
+    color:black !important;
+}
+
+/* Heading */
+
+h1{
+    text-align:left !important;
+    font-size:medium;
+}
+
+h2,
+h3,
+h4{
+    text-align:left;
+    font-size:medium;
+}
+
+
+/* Paragraph */
+
+p{
+    text-indent:0px;
+}
+
+p span.catch,
+p span.footer,
+p span.pageNum,
+p span.header {
+    font-size:100% !important;
+}
+
+/* Notes */
+span.note{
+    /*border:1px solid gray;
+    text-align:left !important;*/
+    font-size:x-small;
+    color:gray;
+    font-size-adjust:0.5;
+    display:block !important;
+}
+
+/* Line breaks and hyphens*/
+br.line_break_del, br.break_no, span.hyphen {
+    display:none;
+}

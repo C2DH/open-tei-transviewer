@@ -1,0 +1,12 @@
+.tei-viewer.facsimile-text.diplomatic
+,.tei-viewer.facsimile-text.diplomatic-responsive {
+	
+	@import url(transcript-specific_dipl.css);
+	
+}
+
+.tei-viewer.facsimile-text.linear {
+	
+	@import url(transcript-specific_lin.css);
+	
+}
