@@ -102,6 +102,7 @@
 	var TYPE					= 'type';
 	var SCROLL_HEIGHT			= 'scrollHeight';
 	var HELP_KEY				= 'help-key';
+	var HREF					= 'href';
 
 	/** Properties */
 	var TAG_NAME				= 'tagName';
@@ -284,7 +285,8 @@
 		$.extend(this.config, config);
 
 		//	Load language file
-		var path 	= TEIViewer.plugInRoot || $("script[src*='teiviewer.']").attr('src').match(/(.*\/)[^\/]*/)[1];
+		var path 		= TEIViewer.plugInRoot || $("script[src*='teiviewer.']").attr('src').match(/(.*\/)[^\/]*/)[1];
+		this.br.path 	= path 
 		$.getScript(path + LANGUAGE_FILE.replace(TOKEN_0, this.config.language), this.bind(function() {
 			this._init();
 		}));
@@ -625,6 +627,9 @@
 
 			//	Initialize click event on the navigation icon
 			this.on(CLICK_EVENT, this._navigation_clickHandler, this.rootEl.find(NAVIGATION_SELECTOR));
+			
+			//	Initialize click event on anchors in the text
+			this.delegate(CLICK_EVENT, this._anchor_clickHandler, this.text, 'a[href^="#"]');
 			
 			//	Define diplomatic text mode
 			this.setTextMode(DIPLOMATIC);
@@ -974,6 +979,7 @@
 
 	/**
 	 * Get the page number from the text offset by using a binary search
+     * 2017/10/17 - fre - Jira WEBSIX-406 ([TEI Transviewer] Issue when scrolling back in dubble page mode: the viewer scrolls automatically to the top of the document)
 	 * 
 	 * @param	offset		offset in the text to which get the page number
 	 * 
@@ -996,6 +1002,11 @@
                 hi = mid;
         }
         
+        //	2017/10/17 - fre - Jira WEBSIX-406 ([TEI Transviewer] Issue when scrolling back in dubble page mode: the viewer scrolls automatically to the top of the document)
+        //	In dubble page view, ensures that the page number is even or 1
+        if(hi > 1 && br.mode == br.constMode2up && hi % 2 != 0)
+        	hi--;
+        	
         return hi;
 		
 	}
@@ -1688,6 +1699,32 @@
 			
 		}), 500);
 		
+	};
+	
+	
+	/**
+	 * Event dispatched when an anchor is clicked
+	 * 
+	 * @param	e		object which contains event data
+	 * 
+	 * @author	fre
+	 * @since	October 17, 2017
+	 */
+	App.prototype._anchor_clickHandler = function(e) {
+
+		e.preventDefault();
+		
+		var href = e.target.attr(HREF);
+		
+		if(href) {
+			var anchor = $(href.replace('.', '\\.'));
+			if(anchor.length > 0) {
+				this.text.animate({
+			        scrollTop: anchor.position().top
+			    }, 500);	
+			}
+		}
+	    
 	};
 
 	

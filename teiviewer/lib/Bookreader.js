@@ -770,8 +770,8 @@ BookReader.prototype.drawLeafsThumbnail = function( seekIndex ) {
                 img = document.createElement("img");
                 var thumbReduce = Math.floor(this.getPageWidth(leaf) / this.thumbWidth);
 
-                //	FRE
-                $(img).prop('src', '/html/js/teiviewer/app/images/transparent.png')
+                //	2017/10/19 - fre - Jira WEBSIX-407 ([TEI Transviewer] Image transparent.png missing)
+                $(img).prop('src', this.path + 'images/transparent.png')
                     .css({'width': leafWidth+'px', 'height': leafHeight+'px' })
                     .addClass('BRlazyload')
                     // Store the URL of the image that will replace this one
@@ -4689,8 +4689,8 @@ BookReader.prototype._getPageHeight= function(index) {
 BookReader.prototype._getPageURI = function(index, reduce, rotate) {
    // console.log("Bookreader.js getPageURI");
     if (index < 0 || index >= this.numLeafs) { // Synthesize page
-    	//	FRE
-        return "/html/js/teiviewer/app/images/transparent.png";
+        //	2017/10/19 - fre - Jira WEBSIX-407 ([TEI Transviewer] Image transparent.png missing)
+        return this.path + 'images/transparent.png';
     }
 
     if ('undefined' == typeof(reduce)) {
