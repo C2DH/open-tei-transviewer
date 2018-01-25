@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../transviewer/templates/xslt/core/main.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">TEI Transviewer Sample</title>
+            <respStmt>
+               <name type="person" xml:id="armaselu">Florentina Armaselu</name>
+               <name type="org">C2DH</name>
+               <resp>Encodage XML-TEI</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority xml:base="https://www.c2dh.uni.lu/">Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg</authority>
+            <availability>
+               <p>Distributed as part of the TEI Transviewer open source release</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Description of the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The projet can include the following configurations:
+               <list>
+                  <item xml:id="transcr">transcription;</item>
+                  <item xml:id="transcr-facs">transcription and facsimile;</item>
+                  <item xml:id="transcr-audio">transcription and audio;</item>
+                  <item xml:id="transcr-video">transcription and video;</item>
+                  <item xml:id="facs">facsimile;</item>
+                  <item xml:id="audio">audio;</item>
+                  <item xml:id="video">video.</item>
+               </list>
+            </p>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="surf_001">
+         <graphic width="688px" height="888px" url="../media/images/transviewer-sample_1_001.jpg"/>
+      </surface>
+      <surface xml:id="surf_002">
+         <graphic width="686px" height="887px" url="../media/images/transviewer-sample_1_002.jpg"/>
+      </surface>
+   </facsimile>
+   <text xml:id="transviewer_sample_1" decls="#facs" type="sample" xml:lang="en">
+      <body>
+         <div>
+            <pb n="001" xml:id="transviewer-sample_001" corresp="#surf_001"/>
+            <pb n="002" xml:id="transviewer-sample_002" corresp="#surf_002"/>
+         </div>
+      </body>
+   </text>
+</TEI>

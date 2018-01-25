@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../transviewer/templates/xslt/core/main.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">TEI Transviewer Sample. Transcription only</title>
+            <respStmt>
+               <name type="person" xml:id="armaselu">Florentina Armaselu</name>
+               <name type="org">C2DH</name>
+               <resp>Encodage XML-TEI</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority xml:base="https://www.c2dh.uni.lu/">Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg</authority>
+            <availability>
+               <p>Distributed as part of the TEI Transviewer open source release</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Description of the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The projet can include the following configurations:
+               <list>
+                  <item xml:id="transcr">transcription;</item>
+                  <item xml:id="transcr-facs">transcription and facsimile;</item>
+                  <item xml:id="transcr-audio">transcription and audio;</item>
+                  <item xml:id="transcr-video">transcription and video;</item>
+                  <item xml:id="facs">facsimile;</item>
+                  <item xml:id="audio">audio;</item>
+                  <item xml:id="video">video.</item>
+               </list>
+            </p>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text xml:id="transviewer_sample_2" decls="#transcr" type="sample" xml:lang="en">
+      <body>
+         <div>
+            <head>TEI Transviewer Sample</head>
+            <head>Transcription only</head>
+            <div>
+               <head>Part 1</head>
+               <p>[Text] <name type="org">organisation name 1</name> [text] <name type="event">event name 1</name> [text] <name type="place">place name 1</name>.</p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <div>
+                  <head>Chapter 1</head>
+                  <p>[Text]</p>
+                  <p>[Text]</p>
+                  <p>[Text] <name type="person">person name 1</name>, <name type="function">position 1</name> [text] <name type="org">organisation name 2</name> [text text text text text text text text text text text text text text text text]</p>
+                  <div>
+                     <head>Section 1</head>
+                        <p>[Text]</p>
+                        <p>[Text]</p>
+                     <p>[Text text text text text text text text text text text text text text text text text text text text text text text text text] <name type="product">product 1</name>, <name type="product">product 2</name>, <name type="product">product 3</name> [text text text]</p>
+                        <p>[Text]</p>
+                        <p>[Text]</p>
+                  </div>
+                  <div>
+                     <head>Section 2</head>
+                        <p>[Text] <name type="event">event name 2</name> [text] <date>date 2</date> [text] <name type="place">place name 2</name> [text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text]</p>
+                        <p>[Text]</p>
+                        <p>[Text]</p>
+                        <p>[Text]</p>
+                  </div>
+               </div>
+               <div>
+                  <head>Chapter 2</head>
+                  <p>[Text text text text text text text text text text text text text text text text text text text text text text text text text text text text]</p>
+                  <p>[Text]</p>
+                  <p>[Text] <name type="person">person name 2</name>, <name type="function">position 2</name>, and <name type="person">person name 1</name> [Text]</p>
+                  <p>[Text]</p>
+               </div>
+            </div>
+            <div>
+               <head>Part 2</head>
+               <div>
+                  <head>Chapter 1</head>
+                  <p>[Text text text text text text text text text text text text text text text text text text text text text text text text text text] <name type="product">product 1</name>, <name type="product">product 2</name>, <name type="product">product 4</name> [text text text]</p>
+                  <div>
+                     <head>Section 1</head>
+                     <p>[Text] <name type="org">organisation name 3</name>, <name type="org">organisation name 4</name>. [text] <name type="org">organisation name 1</name> [text]</p>
+                     <p>[Text]</p>
+                     <p>[Text] <date>date 3</date> [text]</p>
+                  </div>
+                  <div>
+                     <head>Section 2</head>
+                     <p>[Text]</p>
+                     <p>[Text] <name type="event">event name 3</name> [text] <date>date 2</date> [text]</p>
+                     <p>[Text]</p>
+                     <p>[Text]</p>
+                     <p>[Text]</p>
+                  </div>
+               </div>
+               <div>
+                  <head>Chapter 2</head>
+                  <div>
+                     <head>Section 1</head>
+                     <p>[Text]</p>
+                     <p>[Text] <name type="place">place name 3</name> [text] <name type="place">place name 4</name> [text] <name type="person">person name 3</name> [text text text text text text text text text text text text text text text text text text text text text text text text text text text text]</p>
+                     <p>[Text]</p>
+                     <p>[Text] <name type="place">place name 2</name> [text]</p>
+                     <p>[Text]</p>
+                     <p>[Text] <date>date 3</date> [text] <name type="event">event name 4</name> [text] </p>
+                  </div>
+                  <div>
+                     <head>Section 2</head>
+                     <p>[Text]</p>
+                     <p>[Text] <name type="org">organisation name 5</name> [text]</p>
+                     <p>[Text]</p>
+                  </div>
+                  <div>
+                     <head>Section 3</head>
+                     <p>[Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text]</p>
+                     <p>[Text]</p>
+                     <p>[Text]</p>
+                     <p>[Text]</p>
+                     <p>[Text]</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,119 @@
+/*CSS for project specific diplomatic transcription rendering.*/
+
+/* General, font size*/
+
+#text h1,
+#text h2,
+#text h3,
+#text h4,
+#text p,
+#text table,
+#text span.footer,
+#text span.header.corresp§confid_stamp,
+#text span.header.corresp§confid_stat,
+#text span.header.corresp§doc_ref,
+#text span.header.corresp§doc_vers,
+#text span.header.corresp§orig_date,
+#text span.header.corresp§orig_lang,
+#text span.pageNum{
+    font-size:88%;
+    font-size-adjust:0.5;
+}
+
+/* Heading */
+
+h1{
+    text-decoration:underline;
+    text-align:center;
+    font-size:medium;
+    font-weight:normal;
+}
+
+h2,
+h3,
+h4{
+    text-decoration:underline;
+    text-align:left;
+    font-size:medium;
+    font-weight:normal;
+}
+
+/* Paragraph */
+
+p{
+    text-indent:30px;
+}
+
+p + table{
+    text-indent:50px;
+}
+
+p span.footer,
+p span.pageNum,
+p span.header {
+    font-size:100% !important;
+    text-indent:0 !important;
+}
+
+/* Header, footer */
+
+span.footer,
+span.pageNum,
+span.header.corresp§confid_stat,
+span.header.corresp§doc_auth,
+span.header.corresp§doc_ref,
+span.header.corresp§doc_vers,
+span.header.corresp§orig_date,
+span.header.corresp§orig_lang,
+span.header#unknown{
+    margin-top:-4px;
+    margin-bottom:-4px;
+    display:block;
+}
+
+/* Footer */
+
+span.footer.corresp§confid_stat{
+    color:grey;
+    text-decoration:underline;
+    text-align:center;
+}
+
+span.type§footnote{
+    font-size:85% !important;
+}
+
+/* Header */
+
+span.header.corresp§doc_auth{
+    font-size:large;
+    font-size-adjust:0.5;
+    text-align:center;
+}
+
+span.pageNum{
+    color:grey;
+    text-align:center;
+}
+
+span.header.corresp§confid_stat{
+    text-align:right;
+    text-decoration:underline;
+}
+
+span.header.corresp§confid_stamp[style~="color:red"]{
+    border:1px solid red;
+    padding:1px;
+    margin-bottom:8px;
+    display:inline-block !important;
+}
+
+span.header.corresp§doc_vers{
+    text-decoration:underline;
+}
+
+span.header.corresp§doc_ref,
+span.header.corresp§orig_date,
+span.header.corresp§orig_lang{
+    text-align:right;
+}

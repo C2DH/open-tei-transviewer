@@ -1,0 +1,22 @@
+/*CSS for transcriptions rendering, by default common to all projects.*/
+
+/* Headings */
+
+#text h1,
+#text h2,
+#text h3,
+#text h4, 
+#text h5, 
+#text h6{
+    color: navy;
+}
+
+#text h1 {
+    text-align: center;
+}
+
+/* Paragraph */
+
+p{
+    text-indent:30px;
+}

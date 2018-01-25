@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../transviewer/templates/xslt/plugins/sample_transcr-facs/main.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">TEI Transviewer Sample. Transcription and facsimile</title>
+            <respStmt>
+               <name type="person" xml:id="armaselu">Florentina Armaselu</name>
+               <name type="org">C2DH</name>
+               <resp>Encodage XML-TEI</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority xml:base="https://www.c2dh.uni.lu/">Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg</authority>
+            <availability>
+               <p>Distributed as part of the TEI Transviewer open source release</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>Luxembourg</country>
+                  <settlement>Luxembourg</settlement>
+                  <repository>Generic repository</repository>
+                  <altIdentifier>
+                     <idno xml:id="doc_ref">DocRef</idno>
+                     <note>Generic reference of the document.</note>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <docAuthor xml:id="doc_auth">Author of the document</docAuthor>
+                     <docTitle>
+                        <titlePart xml:lang="fr">TEI Transviewer Sample</titlePart>
+                     </docTitle>
+                     <docEdition xml:id="doc_vers">FINAL VERSION</docEdition>
+                     <colophon>
+                        <origDate xml:id="orig_date" when="2017-10-17">October 17<hi rend="superscript">th</hi>, 2017</origDate>
+                        <lang xml:id="orig_lang">Original English</lang>
+                     </colophon>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Paper</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <typeDesc>
+                     <typeNote>Typewritten text.</typeNote>
+                  </typeDesc>
+                  <additions>
+                     <stamp xml:id="confid_stamp">Confidentiality status stamp</stamp>
+                  </additions>
+               </physDesc>
+               <additional>
+                  <adminInfo>
+                     <availability>
+                        <p xml:id="confid_stat">CONFIDENTIAL</p>
+                     </availability>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The projet can include the following configurations:
+               <list>
+                  <item xml:id="transcr">transcription;</item>
+                  <item xml:id="transcr-facs">transcription and facsimile;</item>
+                  <item xml:id="transcr-audio">transcription and audio;</item>
+                  <item xml:id="transcr-video">transcription and video;</item>
+                  <item xml:id="facs">facsimile;</item>
+                  <item xml:id="audio">audio;</item>
+                  <item xml:id="video">video.</item>
+               </list>
+            </p>
+         </projectDesc>
+         <tagsDecl>
+            <rendition xml:id="center">text-align: center;</rendition>
+            <rendition xml:id="red">color: red;</rendition>
+         </tagsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="surf_001">
+         <graphic width="686px" height="889px" url="../media/images/transviewer-sample_3_001.jpg"/>
+      </surface>
+      <surface xml:id="surf_002">
+         <graphic width="686px" height="882px" url="../media/images/transviewer-sample_3_002.jpg"/>
+      </surface>
+      <surface xml:id="surf_003">
+         <graphic width="687px" height="888px" url="../media/images/transviewer-sample_3_003.jpg"/>
+      </surface>
+   </facsimile>
+   <text xml:id="transviewer_sample_3" decls="#transcr-facs" type="sample" xml:lang="en">
+      <body>
+         <div>
+            <pb n="001" xml:id="transviewer-sample_001" corresp="#surf_001"/>
+            <fw type="header" corresp="#doc_auth">Author of the document</fw>
+            <fw type="header" corresp="#confid_stamp" rendition="red">CONFIDENTIAL</fw>
+            <fw type="header" corresp="#doc_vers">FINAL VERSION</fw>
+            <fw type="header" corresp="#doc_ref">DocRef</fw>
+            <fw type="header" corresp="#orig_lang">Original English</fw>
+            <fw type="header" corresp="#orig_date">
+               <date>October 17<hi rend="superscript">th</hi>, 2017</date>
+            </fw>
+            <head>TEI Transviewer Sample</head>
+            <head>Transcription and facsimile</head>
+            <p>[Text] <name type="org">organisation name 1</name> [text] <name type="event">event name 1</name> [text] <name type="place">place name 1</name>.</p>
+            <p>[Text]</p>
+            <div>
+               <head>Section 1</head>
+               <p>[Text]<hi rend="superscript"><ref type="noteAnchor" target="#fn1" xml:id="na1">1</ref></hi></p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <p>[Text] <name type="person">person name 1</name>, <name type="function">position 1</name> [text] <name type="org">organisation name 2</name> [text text text text text <lb/>text text text text text text text text text text text]<hi rend="superscript"><ref type="noteAnchor" target="#fn2" xml:id="na2">2</ref></hi></p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <p>[Text text text text text text text text text text text text text text text text text <lb/>text text text text text text text text] <name type="product">product 1</name>, <name type="product">product 2</name>, <name type="product">product 3</name> [text text text]</p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <p>[Text] <name type="event">event name 2</name> [text] <date>date 2</date> [text] <name type="place">place name 2</name> [text text text text text <lb/>text text text text text text text text text text text text text text text text <lb/>text text text text text text text text text text text text text text text]</p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <p>[Text]</p>
+               <p>[Text text text text text text text text text text text text text text text text <lb/>text text text text text text text text text text text text]</p>
+               <fw type="footer">
+                  <note type="footnote" xml:id="fn1">
+                     <hi rend="superscript"><ref target="#na1">1</ref></hi> Footnote 1<lb/>
+                  </note>
+                  <note type="footnote" xml:id="fn2">
+                     <hi rend="superscript"><ref target="#na2">2</ref></hi> Footnote 2<lb/>
+                  </note>
+               </fw>
+               <fw type="footer" corresp="#confid_stat">CONFIDENTIAL</fw>
+            </div>
+            <div>
+               <pb n="002" xml:id="transviewer-sample_002" corresp="#surf_002"/>
+               <fw type="pageNum">- 2 -</fw>
+               <fw type="header" corresp="#doc_ref">DocRef</fw>
+               <head>Section 2</head>
+               <p>[Text]</p>
+               <p>[Text] <name type="person">person name 2</name>, <name type="function">position 2</name>, and <name type="person">person name 1</name> [Text]</p>
+               <p>[Text]</p>
+               <div>
+                  <head>Section 2.1</head>
+                  <p>[Text text text text text text text text text text text text text text text text text text <lb/>text text text text text text text text] <name type="product">product 1</name>, <name type="product">product 2</name>, <name type="product">product 4</name> [text text text]</p>
+                  <p>[Text] <name type="org">organisation name 3</name>, <name type="org">organisation name 4</name>. [text] <name type="org">organisation name 1</name> <lb/>[text]</p>
+                  <p>[Text]</p>
+                  <p>[Text] <date>date 3</date> [text]</p>
+                  <p>[Text]</p>
+                  <p>[Text] <name type="event">event name 3</name> [text] <date>date 2</date> [text]</p>
+                  <p>[Text]</p>
+                  <p>[Text]</p>
+                  <p>[Text]</p>
+               </div>
+               <div>
+                  <head>Section 2.2</head>
+                  <p>[Text]</p>
+                  <p>[Text] <name type="place">place name 3</name> [text] <name type="place">place name 4</name> [text] <name type="person">person name 3</name> [text text text text <lb/>text text text text text text text text text text text text text text text text text <lb/>text text text text text text text]</p>
+                  <p>[Text]</p>
+                  <p>[Text]</p>
+                  <p>[Text] <name type="place">place name 2</name> [text]</p>
+                  <p>[Text]</p>
+                  <p>[Text] <date>date 3</date> [text] <name type="event">event name 4</name> [text] </p>
+                  <p>[Text]</p>
+                  <p>[Text] <name type="org">organisation name 5</name> [text]</p>
+                  <p>[Text]</p>
+                  <fw type="footer" corresp="#confid_stat">CONFIDENTIAL</fw>
+               </div>
+               <div>
+                  <pb n="002" xml:id="transviewer-sample_003" corresp="#surf_003"/>
+                  <fw type="pageNum">- 3 -</fw>
+                  <fw type="header" corresp="#doc_ref">DocRef</fw>
+                  <head>Section 3</head>
+                  <p>[Text text text text text text text text text text text text text text text text text text <lb/>text text text text text text text text text text text text text text text text text text text text <lb/>text text text text text text text text text text text]</p>
+                  <p>[Text]</p>
+                  <p>[Text]</p>
+                  <p>[Text]</p>
+                  <p>[Text]</p>
+                  <fw type="footer" corresp="#confid_stat">CONFIDENTIAL</fw>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
