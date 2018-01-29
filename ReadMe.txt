@@ -119,5 +119,11 @@ The current online version of the Transviewer and our XML-TEI based collection c
 
 6.1.  Specify the height and width attributes of images
 
+The width and height attributes of images should be manually specified in the xml file in order to keep the ratio of images.
+If omitted, the default width is 800px and default height is 1200px with a ratio of 2/3.
+Any units can be used for the values.
+
+Ex: <graphic width="686px" height="889px" url="../media/images/transviewer-sample_3_001.jpg"/>
+
 
 6.2. Change the interface language
