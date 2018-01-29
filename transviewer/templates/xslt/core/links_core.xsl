@@ -22,19 +22,27 @@
     
     <xsl:template name="bodyCoreScript">
         <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathSaxonceJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQueryJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQuery-uiJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQuery-highlightJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQuery-markJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathDragscrollableJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathBookreaderJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathBookreader-simpleJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathTransviewerJS}"/>
-        
+        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQueryJS}" onload="loadJQueryPlugins()"/>
+		
         <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-            <xsl:text disable-output-escaping="yes">
-                $(document).ready(function() { new TransViewer($('body')); });
-            </xsl:text>
+            	function loadJQueryPlugins() {
+                		$.when(
+	                		$.getScript('<xsl:value-of select="$pathJQuery-uiJS" />'),
+	                		$.getScript('<xsl:value-of select="$pathJQuery-highlightJS" />'),
+	                		$.getScript('<xsl:value-of select="$pathJQuery-markJS" />'),
+	                		$.getScript('<xsl:value-of select="$pathDragscrollableJS" />'),
+	                		$.getScript('<xsl:value-of select="$pathBookreaderJS" />'),
+	                		$.getScript('<xsl:value-of select="$pathTransviewerJS" />')
+	                		
+						).done(function() {
+						
+	                		$.getScript('<xsl:value-of select="$pathBookreader-simpleJS" />'
+	                		).done(function() {
+								TransViewer.plugInRoot = '<xsl:value-of select="concat($pathRoot, $sepFile)" />';
+								new TransViewer($('body'));
+							});
+						});
+               	}
         </script>
     </xsl:template>
     
