@@ -13,9 +13,7 @@
         </xd:desc>
     </xd:doc>
 
-    <xsl:output method="xhtml" encoding="UTF-8"
-        doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" 
-        doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" indent="no"/>
+    <xsl:output method="html" encoding="UTF-8" indent="no"/>
     
     <xsl:strip-space elements="*"/>
     
