@@ -18,7 +18,7 @@
 	var MOUSE_LEAVE_EVENT		= 'mouseleave';
 
 	/** CSS classes */
-	var TEI_VIEWER				= 'tei-viewer';
+	var TRANSVIEWER				= 'transviewer';
 	var CONTENT_WRAPPER			= 'content-wrapper';
 	var MENU_BAR				= 'menu-bar';
 	var TEXT_ONLY				= 'text-only';
@@ -556,7 +556,7 @@
 	App.prototype._init = function() {
 
 		//	Add default class name
-		this.rootEl.addClass(TEI_VIEWER);
+		this.rootEl.addClass(TRANSVIEWER);
 
 		//	Add toolbar
 		this.rootEl.prepend(this._formatLanguage(TOOLBAR_HTML));
