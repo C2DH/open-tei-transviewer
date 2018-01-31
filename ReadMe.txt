@@ -57,9 +57,9 @@ TEI Transviewer samples, for three configurations:
 
 For each corresponding configuration, there is a common hierarchy of subfolders:
 
-html - results of the xslt transformation using Saxon-CE
+html_saxonce - results of the xslt transformation using Saxon-CE
 media - images of the digitised facsimiles
-xhtml - results of the xslt transformation without using Saxon-CE
+html - results of the xslt transformation without using Saxon-CE
 xml - files in XML-TEI format to be transfromed and visualised via the Transviwer
 
 
@@ -79,7 +79,7 @@ core - CSS or XSLT applying to a larger number of project (e.g. most common XML 
 
 plugins - It may contain subfolders for each project requiring specific configurations. The name of the subfolder is the same with that of the project mentioned in the data folder (e.g. sample_transcr-facs). 
 
-main_to_xhtml - XSLT stylesheet transforming the XML-TEI to XHTML, outside the browser (e.g. via an XML Editor equipped with a XSLT processor).
+main_to_html - XSLT stylesheet transforming the XML-TEI to HTML, outside the browser (e.g. via an XML Editor equipped with a XSLT processor).
 
 main - XSLT stylesheet transforming the XML-TEI directly in the browser (e.g. using Saxon-CE processor) or outside the browser to generate the corresponding HTML file. 
 

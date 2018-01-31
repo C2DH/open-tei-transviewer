@@ -24,11 +24,11 @@
 	</xsl:template>
 	
     <xsl:template match="//tei:facsimile//tei:graphic">
-    	<img xmlns="http://www.w3.org/1999/xhtml" width="{translate(./@width, translate(./@width, '0123456789', ''), '')}" height="{translate(./@height, translate(./@height, '0123456789', ''), '')}" data-src="{./@url}" />
+    	<img xmlns="http://www.w3.org/1999/xhtml" width="{translate(./@width, translate(./@width, '0123456789', ''), '')}" height="{translate(./@height, translate(./@height, '0123456789', ''), '')}" data-src="{./@url}" src="#" />
 	</xsl:template>	
 
 	<xsl:template match="//tei:text">
-		<section xmlns="http://www.w3.org/1999/xhtml" class="doc-part-text {$textType}" id="{$textID}">
+		<section xmlns="http://www.w3.org/1999/xhtml" class="doc-part-text {$textType}">
 			<div xmlns="http://www.w3.org/1999/xhtml" id="text" class="text_img">
 				<xsl:apply-templates select="./child::node()" />
 			</div>
