@@ -20,5 +20,6 @@
     <!-- Paths -->
     <xsl:param name="pathSpecificXSL" select="'../../../transviewer/templates/xslt/plugins/sample_transcr-facs'"/>
     <xsl:param name="pathSpecificCSS" select="'../../../transviewer/templates/css/plugins/sample_transcr-facs'"/>
+    <xsl:param name="pathSpecificSaxonEntryXSL" select="concat(concat($pathSpecificXSL, $sepFile), $fileSaxonEntryXSL)"/>
     
 </xsl:stylesheet>

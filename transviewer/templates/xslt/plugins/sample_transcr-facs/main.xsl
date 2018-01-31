@@ -17,6 +17,7 @@
    <xsl:include href="local_config.xsl"/>
     
    <xsl:template match="/">
+	    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml" lang="{$lang}">
             <xsl:call-template name="head" />
             <body xmlns="http://www.w3.org/1999/xhtml" class="{$textType}" id="{$textID}">
@@ -29,7 +30,7 @@
         <head xmlns="http://www.w3.org/1999/xhtml">
             <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
             <xsl:call-template name="bootSaxonCE">
-                <xsl:with-param name="pathSaxonEntryXSL" select="$pathSaxonEntryXSL" />
+                <xsl:with-param name="pathSaxonEntryXSL" select="$pathSpecificSaxonEntryXSL" />
             </xsl:call-template>
             <xsl:call-template name="headCoreCSS" />
             <xsl:call-template name="headSpecificCSS" />
