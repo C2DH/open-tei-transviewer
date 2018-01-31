@@ -2,18 +2,18 @@
 
 /* General, font size*/
 
-#text h1,
-#text h2,
-#text h3,
-#text h4,
-#text li,
-#text note,
-#text p, 
-#text table,
-#text span.catch,
-#text span.footer,
-#text span.header,
-#text span.pageNum
+.linear #text h1,
+.linear #text h2,
+.linear #text h3,
+.linear #text h4,
+.linear #text li,
+.linear #text note,
+.linear #text p, 
+.linear #text table,
+.linear #text span.catch,
+.linear #text span.footer,
+.linear #text span.header,
+.linear #text span.pageNum
 {
     font-size:88%;
     font-size-adjust:0.5;
@@ -24,32 +24,32 @@
 
 /* Heading */
 
-h1{
+.linear h1{
     font-size:medium;
 }
 
-h2,
-h3,
-h4{
+.linear h2,
+.linear h3,
+.linear h4{
     font-size:medium;
 }
 
 
 /* Paragraph */
 
-p{
+.linear p{
     text-indent:0px;
 }
 
-p span.catch,
-p span.footer,
-p span.pageNum,
-p span.header {
+.linear p span.catch,
+.linear p span.footer,
+.linear p span.pageNum,
+.linear p span.header {
     font-size:100% !important;
 }
 
 /* Notes */
-span.note{
+.linear span.note{
     /*border:1px solid gray;
     text-align:left !important;*/
     font-size:x-small;
@@ -59,6 +59,6 @@ span.note{
 }
 
 /* Line breaks and hyphens*/
-br.line_break_del, br.break_no, span.hyphen {
+.linear br.line_break_del, br.break_no, span.hyphen {
     display:none !important;
 }

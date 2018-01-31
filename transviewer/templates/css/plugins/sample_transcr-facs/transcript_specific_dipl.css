@@ -2,36 +2,36 @@
 
 /* General, font size*/
 
-#text h1,
-#text h2,
-#text h3,
-#text h4,
-#text p,
-#text table,
-#text span.footer,
-#text span.header.corresp§confid_stamp,
-#text span.header.corresp§confid_stat,
-#text span.header.corresp§doc_ref,
-#text span.header.corresp§doc_vers,
-#text span.header.corresp§orig_date,
-#text span.header.corresp§orig_lang,
-#text span.pageNum{
+[class*="diplomatic"] #text h1,
+[class*="diplomatic"] #text h2,
+[class*="diplomatic"] #text h3,
+[class*="diplomatic"] #text h4,
+[class*="diplomatic"] #text p,
+[class*="diplomatic"] #text table,
+[class*="diplomatic"] #text span.footer,
+[class*="diplomatic"] #text span.header.corresp§confid_stamp,
+[class*="diplomatic"] #text span.header.corresp§confid_stat,
+[class*="diplomatic"] #text span.header.corresp§doc_ref,
+[class*="diplomatic"] #text span.header.corresp§doc_vers,
+[class*="diplomatic"] #text span.header.corresp§orig_date,
+[class*="diplomatic"] #text span.header.corresp§orig_lang,
+[class*="diplomatic"] #text span.pageNum{
     font-size:88%;
     font-size-adjust:0.5;
 }
 
 /* Heading */
 
-h1{
+[class*="diplomatic"] h1{
     text-decoration:underline;
     text-align:center;
     font-size:medium;
     font-weight:normal;
 }
 
-h2,
-h3,
-h4{
+[class*="diplomatic"] h2,
+[class*="diplomatic"] h3,
+[class*="diplomatic"] h4{
     text-decoration:underline;
     text-align:left;
     font-size:medium;
@@ -40,32 +40,32 @@ h4{
 
 /* Paragraph */
 
-p{
+[class*="diplomatic"] p{
     text-indent:30px;
 }
 
-p + table{
+[class*="diplomatic"] p + table{
     text-indent:50px;
 }
 
-p span.footer,
-p span.pageNum,
-p span.header {
+[class*="diplomatic"] p span.footer,
+[class*="diplomatic"] p span.pageNum,
+[class*="diplomatic"] p span.header {
     font-size:100% !important;
     text-indent:0 !important;
 }
 
 /* Header, footer */
 
-span.footer,
-span.pageNum,
-span.header.corresp§confid_stat,
-span.header.corresp§doc_auth,
-span.header.corresp§doc_ref,
-span.header.corresp§doc_vers,
-span.header.corresp§orig_date,
-span.header.corresp§orig_lang,
-span.header#unknown{
+[class*="diplomatic"] span.footer,
+[class*="diplomatic"] span.pageNum,
+[class*="diplomatic"] span.header.corresp§confid_stat,
+[class*="diplomatic"] span.header.corresp§doc_auth,
+[class*="diplomatic"] span.header.corresp§doc_ref,
+[class*="diplomatic"] span.header.corresp§doc_vers,
+[class*="diplomatic"] span.header.corresp§orig_date,
+[class*="diplomatic"] span.header.corresp§orig_lang,
+[class*="diplomatic"] span.header#unknown{
     margin-top:-4px;
     margin-bottom:-4px;
     display:block;
@@ -73,47 +73,47 @@ span.header#unknown{
 
 /* Footer */
 
-span.footer.corresp§confid_stat{
+[class*="diplomatic"] span.footer.corresp§confid_stat{
     color:grey;
     text-decoration:underline;
     text-align:center;
 }
 
-span.type§footnote{
+[class*="diplomatic"] span.type§footnote{
     font-size:85% !important;
 }
 
 /* Header */
 
-span.header.corresp§doc_auth{
+[class*="diplomatic"] span.header.corresp§doc_auth{
     font-size:large;
     font-size-adjust:0.5;
     text-align:center;
 }
 
-span.pageNum{
+[class*="diplomatic"] span.pageNum{
     color:grey;
     text-align:center;
 }
 
-span.header.corresp§confid_stat{
+[class*="diplomatic"] span.header.corresp§confid_stat{
     text-align:right;
     text-decoration:underline;
 }
 
-span.header.corresp§confid_stamp[style~="color:red"]{
+[class*="diplomatic"] span.header.corresp§confid_stamp[style~="color:red"]{
     border:1px solid red;
     padding:1px;
     margin-bottom:8px;
     display:inline-block !important;
 }
 
-span.header.corresp§doc_vers{
+[class*="diplomatic"] span.header.corresp§doc_vers{
     text-decoration:underline;
 }
 
-span.header.corresp§doc_ref,
-span.header.corresp§orig_date,
-span.header.corresp§orig_lang{
+[class*="diplomatic"] span.header.corresp§doc_ref,
+[class*="diplomatic"] span.header.corresp§orig_date,
+[class*="diplomatic"] span.header.corresp§orig_lang{
     text-align:right;
 }
