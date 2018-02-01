@@ -1,5 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>TEI Transviewer Sample</title><link href="../../../transviewer/styles/transviewer.css" rel="stylesheet" type="text/css" /><link href="../../../transviewer/templates/css/core/transcript_core.css" rel="stylesheet" type="text/css" /><style type="text/css">html, body {height:100%; margin:0; overflow: hidden;</style></head><body class="sample" id="transviewer_sample_1"><div class="content-wrapper"><section id="BookReader" class="doc-part-fac"><img width="688" height="888" data-src="../media/images/transviewer-sample_1_001.jpg" src="#" /><img width="686" height="887" data-src="../media/images/transviewer-sample_1_002.jpg" src="#" /></section><section class="doc-part-text sample"><div id="text" class="text_img"><div class="transcript"><br class="change_page" id="page_1" /><br class="change_page" id="page_2" /></div></div></section></div><script type="text/javascript" src="../../../transviewer/lib/Saxon-CE_1.1/Saxonce/Saxonce.nocache.js"></script><script type="text/javascript" src="../../../transviewer/lib/jquery-1.11.1.min.js"></script><script type="text/javascript" src="../../../transviewer/lib/jquery-ui-1.11.4.min.js"></script><script type="text/javascript" src="../../../transviewer/lib/jquery.highlight.js"></script><script type="text/javascript" src="../../../transviewer/lib/jquery.mark.min.js"></script><script type="text/javascript" src="../../../transviewer/lib/dragscrollable.js"></script><script type="text/javascript" src="../../../transviewer/lib/Bookreader.js"></script><script type="text/javascript" src="../../../transviewer/lib/bookreader-simple.js"></script><script type="text/javascript" src="../../../transviewer/transviewer.js"></script><script type="text/javascript">
-                $(document).ready(function() { new TransViewer($('body')); });
-            </script></body></html>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta><title>TEI Transviewer Sample</title><link href="../../../transviewer/styles/transviewer.css" rel="stylesheet" type="text/css"></link><link href="../../../transviewer/templates/css/core/transcript_core.css" rel="stylesheet" type="text/css"></link><style type="text/css">html, body {height:100%; margin:0; overflow: hidden;</style></head><body class="sample" id="transviewer_sample_1"><div class="content-wrapper"><section id="BookReader" class="doc-part-fac"><img width="688" height="888" data-src="../media/images/transviewer-sample_1_001.jpg" src="#"></img><img width="686" height="887" data-src="../media/images/transviewer-sample_1_002.jpg" src="#"></img></section><section class="doc-part-text sample"><div id="text" class="text_img"><div class="transcript"><br class="change_page" id="page_1"></br><br class="change_page" id="page_2"></br></div></div></section></div><script type="text/javascript">
+            	function loadJQueryPlugins() {
+                		$.when(
+	                		$.getScript('../../../transviewer/lib/jquery-ui-1.11.4.min.js'),
+	                		$.getScript('../../../transviewer/lib/jquery.highlight.js'),
+	                		$.getScript('../../../transviewer/lib/jquery.mark.min.js'),
+	                		$.getScript('../../../transviewer/lib/dragscrollable.js'),
+	                		$.getScript('../../../transviewer/lib/Bookreader.js'),
+	                		$.getScript('../../../transviewer/transviewer.js')
+	                		
+						).done(function() {
+						
+	                		$.getScript('../../../transviewer/lib/bookreader-simple.js'
+	                		).done(function() {
+								TransViewer.plugInRoot = '../../../transviewer/';
+								new TransViewer($('body'));
+							});
+						});
+               	}
+        </script><script type="text/javascript" src="../../../transviewer/lib/Saxon-CE_1.1/Saxonce/Saxonce.nocache.js"></script><script type="text/javascript" src="../../../transviewer/lib/jquery-1.11.1.min.js" onload="loadJQueryPlugins()"></script></body></html>
