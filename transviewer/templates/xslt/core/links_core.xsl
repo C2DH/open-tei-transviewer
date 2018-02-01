@@ -21,9 +21,6 @@
     </xsl:template>
     
     <xsl:template name="bodyCoreScript">
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathSaxonceJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQueryJS}" onload="loadJQueryPlugins()"/>
-		
         <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
             	function loadJQueryPlugins() {
                 		$.when(
@@ -44,6 +41,9 @@
 						});
                	}
         </script>
+        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathSaxonceJS}"/>
+        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQueryJS}" onload="loadJQueryPlugins()"/>
+		
     </xsl:template>
     
 </xsl:stylesheet>
