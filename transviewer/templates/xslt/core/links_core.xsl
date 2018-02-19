@@ -21,28 +21,28 @@
     </xsl:template>
     
     <xsl:template name="bodyCoreScript">
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-            	function loadJQueryPlugins() {
-                		$.when(
-	                		$.getScript('<xsl:value-of select="$pathJQuery-uiJS" />'),
-	                		$.getScript('<xsl:value-of select="$pathJQuery-highlightJS" />'),
-	                		$.getScript('<xsl:value-of select="$pathJQuery-markJS" />'),
-	                		$.getScript('<xsl:value-of select="$pathDragscrollableJS" />'),
-	                		$.getScript('<xsl:value-of select="$pathBookreaderJS" />'),
-	                		$.getScript('<xsl:value-of select="$pathTransviewerJS" />')
-	                		
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+				function loadJQueryPlugins() {
+						$.when(
+							$.getScript('<xsl:value-of select="$pathJQuery-uiJS" />'),
+							$.getScript('<xsl:value-of select="$pathJQuery-highlightJS" />'),
+							$.getScript('<xsl:value-of select="$pathJQuery-markJS" />'),
+							$.getScript('<xsl:value-of select="$pathDragscrollableJS" />'),
+							$.getScript('<xsl:value-of select="$pathBookreaderJS" />'),
+							$.getScript('<xsl:value-of select="$pathTransviewerJS" />')
+
 						).done(function() {
-						
-	                		$.getScript('<xsl:value-of select="$pathBookreader-simpleJS" />'
-	                		).done(function() {
+
+							$.getScript('<xsl:value-of select="$pathBookreader-simpleJS" />'
+							).done(function() {
 								TransViewer.plugInRoot = '<xsl:value-of select="concat($pathRoot, $sepFile)" />';
 								new TransViewer($('body'));
 							});
 						});
-               	}
-        </script>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathSaxonceJS}"/>
-        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQueryJS}" onload="loadJQueryPlugins()"/>
+				}
+		</script>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathSaxonceJS}"/>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="{$pathJQueryJS}" onload="loadJQueryPlugins()"/>
 		
     </xsl:template>
     

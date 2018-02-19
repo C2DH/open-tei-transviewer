@@ -17,7 +17,7 @@
    <xsl:include href="local_config.xsl"/>
     
     <xsl:template match="/">
-            <xsl:result-document href="{concat($refTag, $textID)}" method="ixsl:replace-content">
+            <xsl:result-document href="{concat($refTag, $textID)}">
                 <xsl:call-template name="bodyCoreLayout"/>
                 <xsl:call-template name="bodyCoreScript" />
         </xsl:result-document>

@@ -21,7 +21,6 @@
         <html xmlns="http://www.w3.org/1999/xhtml" lang="{$lang}">
             <xsl:call-template name="head" />
             <body xmlns="http://www.w3.org/1999/xhtml" class="{$textType}" id="{$textID}">
-                <p></p>
             </body> 
         </html>
     </xsl:template>
