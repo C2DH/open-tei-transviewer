@@ -17,7 +17,6 @@
 		<script>
 			<xsl:text disable-output-escaping="yes">
 				var onSaxonLoad = function() {
-					console.log("saxon");
 					Saxon.run({
 						stylesheet: "</xsl:text><xsl:value-of select="$pathSaxonEntryXSL"/>
 						<xsl:text disable-output-escaping="yes">", source: "</xsl:text><xsl:value-of select="$xmlSource"/>
