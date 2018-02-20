@@ -164,6 +164,7 @@
 	var HELP_PLACEHOLDER_SELECTOR	= HELP_BOX_SELECTOR + CLASS_SELECTOR + PLACEHOLDER;
 	var TAB_SELECTOR				= CLASS_SELECTOR + TAB + CLASS_SELECTOR + NAME;
 	var ACTIVE_HELP_SELECTOR		= CLASS_SELECTOR + ACTIVE_HELP;
+	var LINK_TAG_WITH_TITLE			= 'link[title]';
 
 	/** HTML */
 	var TOOLBAR_HTML 			= '\
@@ -354,6 +355,11 @@
 		
 		this.textMode = textMode;
 		this.rootEl.addClass(this.textMode);
+		
+		//	Enabled the right stylesheet
+		$(LINK_TAG_WITH_TITLE).each(function() {
+			this.disabled = $(this).attr(TITLE) != textMode.split(HYPHEN)[0];
+		});
 		
 		this._refreshPageOffsets();		
 
