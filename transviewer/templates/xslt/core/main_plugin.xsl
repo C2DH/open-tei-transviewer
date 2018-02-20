@@ -18,7 +18,10 @@
 	<xsl:include href="global_config.xsl"/>
 
 	<xsl:template match="/">
-		<xsl:call-template name="bodyCoreLayout"/>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper" id="{$textID}">
+			<xsl:apply-templates select="//tei:facsimile" />
+			<xsl:apply-templates select="//tei:text" />
+		</div>
 	</xsl:template>
 
 </xsl:stylesheet>
