@@ -57,12 +57,14 @@
     </xsl:template>
     
     <!-- Headers, footers, catch, page numbers with @type, @corresp and @rendition for colour-->
-    <xsl:template match="//tei:fw[count(./@*)=3 and count(./@type)=1 and count(./@corresp)=1 and count(./@rendition)=1]">
-                <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type} {name(./@corresp)}{$sepAtt}{substring-after(./@corresp,$refTag)}" style="color:{./@rendition}">
-                    <xsl:apply-templates select="./child::node()"/>
-                </span>
+	<xsl:template match="//tei:fw[count(./@*)=3 and count(./@type)=1 and count(./@corresp)=1 and count(./@rendition)=1]">
+		<span xmlns="http://www.w3.org/1999/xhtml" class="{./@type} {name(./@corresp)}{$sepAtt}{substring-after(./@corresp,$refTag)}">
+			<!--  Bypass  the invalidate of style attribute on IE -->
+			<xsl:attribute name="style" select="concat('color: ', ./@rendition)" />
+			<xsl:apply-templates select="./child::node()"/>
+		</span>
         <br xmlns="http://www.w3.org/1999/xhtml" />
-    </xsl:template>
+	</xsl:template>
         
     <!-- Note with @xml:id -->
     <xsl:template match="//tei:note[count(./@*)=1 and count(./@xml:id)=1]">

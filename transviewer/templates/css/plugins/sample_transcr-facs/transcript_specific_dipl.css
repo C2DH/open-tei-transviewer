@@ -101,7 +101,7 @@ span.header.corresp§confid_stat{
     text-decoration:underline;
 }
 
-span.header.corresp§confid_stamp[style~="color:red"]{
+span.header.corresp§confid_stamp[style*="color: red"]{
     border:1px solid red;
     padding:1px;
     margin-bottom:8px;
