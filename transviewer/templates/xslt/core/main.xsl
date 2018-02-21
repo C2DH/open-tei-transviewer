@@ -17,7 +17,7 @@
     <xsl:include href="global_config.xsl"/>
     
     <xsl:template match="/">
-	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+		<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml" lang="{$lang}">
             <xsl:call-template name="head" />
             <body xmlns="http://www.w3.org/1999/xhtml" class="{$textType}" id="{$textID}">

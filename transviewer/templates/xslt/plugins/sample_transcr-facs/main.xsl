@@ -12,11 +12,11 @@
         </xd:desc>
     </xd:doc>
     
-    <xsl:output method="html" encoding="utf-8" indent="no"/> 
+	<xsl:output method="html" encoding="utf-8" indent="no"/> 
 
-   <xsl:include href="local_config.xsl"/>
-    
-   <xsl:template match="/">
+	<xsl:include href="local_config.xsl"/>
+
+	<xsl:template match="/">
 	    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml" lang="{$lang}">
             <xsl:call-template name="head" />
