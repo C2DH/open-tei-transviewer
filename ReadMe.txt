@@ -1,4 +1,4 @@
-﻿ReadMe - Open source TEI Transviewer 1.0
+ReadMe - Open source TEI Transviewer 1.0
 Author(s): Florentina Armaselu
 Last updated: 17.11.2017
 ------------------------------------
@@ -15,7 +15,7 @@ CONTENTS
 6. Specific instructions
 	6.1. Specify the height and width attributes of images
 	6.2. Change the interface language
-
+7. Cross-browser compatibility
 
 -------------------------------------
 1. Introduction
@@ -127,3 +127,8 @@ Ex: <graphic width="686px" height="889px" url="../media/images/transviewer-sampl
 
 
 6.2. Change the interface language
+
+
+-------------------------------------
+7. Cross-browser compatibility
+-------------------------------------
