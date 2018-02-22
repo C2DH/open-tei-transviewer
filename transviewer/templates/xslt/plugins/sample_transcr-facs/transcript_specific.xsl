@@ -40,14 +40,6 @@
         <br xmlns="http://www.w3.org/1999/xhtml" />
     </xsl:template>
     
-    <!-- Headers, footers, catch, page numbers with @type, @corresp and @xml:id-->
-    <xsl:template match="//tei:fw[count(./@*)=3 and count(./@type)=1 and count(./@corresp)=1 and count(./@xml:id)=1]">
-        <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type} {name(./@corresp)}{$sepAtt}{substring-after(./@corresp,$refTag)}" id="{./@xml:id}">
-            <xsl:apply-templates select="./child::node()"/>
-        </span>
-        <br xmlns="http://www.w3.org/1999/xhtml" />
-    </xsl:template>
-    
     <!-- Headers, footers, catch, page numbers with @type and @xml:id-->
     <xsl:template match="//tei:fw[count(./@*)=2 and count(./@type)=1 and count(./@xml:id)=1]">
         <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type}" id="{./@xml:id}">

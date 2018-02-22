@@ -287,7 +287,8 @@
 
 		//	Load language file
 		var path 		= TransViewer.plugInRoot || $("script[src*='transviewer.']").attr('src').match(/(.*\/)[^\/]*/)[1];
-		this.br.path 	= path;
+		if(this.br) 
+			this.br.path 	= path;
 		$.getScript(path + LANGUAGE_FILE.replace(TOKEN_0, this.config.language), this.bind(function() {
 			this._init();
 		}));
@@ -392,10 +393,12 @@
 		
 		//	Fix an issue when you change page in 2 pages mode with different image sizes
 		//	Apply a fit to page if the zoomIndex is 0
-		setTimeout(function() {
-			if(br.mode == br.constMode2up && br.zoomIndex == 0)
-				br.resetZoom();
-		}, 500);
+		if(this.br) {
+			setTimeout(function() {
+				if(br.mode == br.constMode2up && br.zoomIndex == 0)
+					br.resetZoom();
+			}, 500);
+		}
 		
 		this.pageNum = pageNum;
 

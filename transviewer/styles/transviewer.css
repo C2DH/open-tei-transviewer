@@ -675,6 +675,11 @@
 
 .transviewer .navigation-box ul {
 	margin:				0;
+	padding:			0;
+}
+
+.transviewer .navigation-box ul li {
+	line-height:		20px;
 }
 
 .transviewer .navigation-box ul li.h1 {

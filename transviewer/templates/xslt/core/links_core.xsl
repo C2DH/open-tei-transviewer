@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:tei="http://www.tei-c.org/ns/1.0" 
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" exclude-result-prefixes="xd" version="1.0">
     <xd:doc scope="stylesheet">
         <xd:desc>
@@ -24,16 +25,23 @@
 		<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
 				function loadJQueryPlugins() {
 						$.when(
-							$.getScript('<xsl:value-of select="$pathJQuery-uiJS" />'),
-							$.getScript('<xsl:value-of select="$pathJQuery-highlightJS" />'),
-							$.getScript('<xsl:value-of select="$pathJQuery-markJS" />'),
-							$.getScript('<xsl:value-of select="$pathDragscrollableJS" />'),
-							$.getScript('<xsl:value-of select="$pathBookreaderJS" />'),
+							<xsl:if test="//tei:facsimile">
+								$.getScript('<xsl:value-of select="$pathJQuery-uiJS" />'),
+								$.getScript('<xsl:value-of select="$pathDragscrollableJS" />'),
+								$.getScript('<xsl:value-of select="$pathBookreaderJS" />'),
+							</xsl:if>
+							<xsl:if test="//tei:text">
+								$.getScript('<xsl:value-of select="$pathJQuery-highlightJS" />'),
+								$.getScript('<xsl:value-of select="$pathJQuery-markJS" />'),
+							</xsl:if>
 							$.getScript('<xsl:value-of select="$pathTransviewerJS" />')
 
 						).done(function() {
-
-							$.getScript('<xsl:value-of select="$pathBookreader-simpleJS" />'
+							$.when(
+								<xsl:if test="//tei:facsimile">
+									$.getScript('<xsl:value-of select="$pathBookreader-simpleJS" />')
+								</xsl:if>
+								
 							).done(function() {
 								TransViewer.plugInRoot = '<xsl:value-of select="concat($pathRoot, $sepFile)" />';
 								new TransViewer($('body'));
