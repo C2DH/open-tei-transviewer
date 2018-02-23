@@ -289,9 +289,11 @@
 		var path 		= TransViewer.plugInRoot || $("script[src*='transviewer.']").attr('src').match(/(.*\/)[^\/]*/)[1];
 		if(this.br) 
 			this.br.path 	= path;
-		$.getScript(path + LANGUAGE_FILE.replace(TOKEN_0, this.config.language), this.bind(function() {
-			this._init();
-		}));
+		$.getScript(path + LANGUAGE_FILE.replace(TOKEN_0, this.config.language))
+			.done(this.bind(this._init))
+			.fail(this.bind(function() {
+				$.getScript(path + LANGUAGE_FILE.replace(TOKEN_0, DEFAULT_LANGUAGE), this.bind(this._init));
+			}));
 		
 	};
 

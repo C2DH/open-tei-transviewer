@@ -44,7 +44,9 @@
 								
 							).done(function() {
 								TransViewer.plugInRoot = '<xsl:value-of select="concat($pathRoot, $sepFile)" />';
-								new TransViewer($('body'));
+								new TransViewer($('body'), {
+									language: '<xsl:value-of select="$lang" />'
+								});
 							});
 						});
 				}

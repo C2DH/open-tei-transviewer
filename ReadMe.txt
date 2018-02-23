@@ -128,6 +128,21 @@ Ex: <graphic width="686px" height="889px" url="../media/images/transviewer-sampl
 
 6.2. Change the interface language
 
+The language of the Transviewer is defined by the xml:lang attribute of the text tag in the xml file.
+If omitted, the default language is English. 
+
+Ex: <text xml:id="transviewer_sample_3" decls="#transcr-facs" type="sample" xml:lang="en">
+
+If the document is a facsimile only, it's possible to defined the language by changing the value of the lang variable 
+in the templates/xslt/core/global_constants.xsl file
+
+Ex: <xsl:variable name="lang" select="'fr'"/>
+
+Available languages are: French (fr), English (en) and German (de).
+If you wish to add a new language, you need to create a new file in the resources folder with the iso code as name.
+
+Ex: resources/es.js
+ 
 
 -------------------------------------
 7. Cross-browser compatibility
