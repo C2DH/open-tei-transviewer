@@ -19,6 +19,7 @@
     <xsl:variable name="textID" select="//tei:text/@xml:id"/>
     <xsl:variable name="textType" select="//tei:text/@type"/>
     <xsl:variable name="lang" select="//tei:text/@xml:lang"/>
+    <xsl:variable name="pageIdPrefix" select="'page_'"/>
     
     <!-- Separators, delimiters and tags -->
     <xsl:param name="sepFile" select="'/'"/>
@@ -33,5 +34,7 @@
     <xsl:variable name="sepClass" select="'separator'"/>
     <!-- Deletable line break in linear transcription -->
     <xsl:variable name="lbDelClass" select="'line_break_del'"/>
+    <xsl:variable name="changePageClass" select="'change_page'"/>
+    <xsl:variable name="toHTML" select="false()"/> 
     
 </xsl:stylesheet>

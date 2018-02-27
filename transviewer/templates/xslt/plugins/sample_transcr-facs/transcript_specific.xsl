@@ -21,7 +21,8 @@
                 <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type}">
                     <xsl:apply-templates select="./child::node()"/>
                 </span>
-        <br xmlns="http://www.w3.org/1999/xhtml" />
+        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
+        <xsl:call-template name="br"/>
     </xsl:template>
     
     <!-- Headers, footers, catch, page numbers with @type and @corresp -->
@@ -29,7 +30,8 @@
         <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type} {name(./@corresp)}{$sepAtt}{substring-after(./@corresp,$refTag)}">
             <xsl:apply-templates select="./child::node()"/>
         </span>
-        <br xmlns="http://www.w3.org/1999/xhtml" />
+        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
+        <xsl:call-template name="br"/>
     </xsl:template>
     
     <!-- Headers, footers, catch, page numbers with @type, @corresp and @xml:id-->
@@ -37,7 +39,8 @@
         <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type} {name(./@corresp)}{$sepAtt}{substring-after(./@corresp,$refTag)}" id="{./@xml:id}">
             <xsl:apply-templates select="./child::node()"/>
         </span>
-        <br xmlns="http://www.w3.org/1999/xhtml" />
+        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
+        <xsl:call-template name="br"/>
     </xsl:template>
     
     <!-- Headers, footers, catch, page numbers with @type and @xml:id-->
@@ -45,7 +48,8 @@
         <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type}" id="{./@xml:id}">
             <xsl:apply-templates select="./child::node()"/>
         </span>
-        <br xmlns="http://www.w3.org/1999/xhtml" />
+        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
+        <xsl:call-template name="br"/>
     </xsl:template>
     
     <!-- Headers, footers, catch, page numbers with @type, @corresp and @rendition for colour-->
@@ -55,7 +59,8 @@
 			<xsl:attribute name="style" select="concat('color: ', ./@rendition)" />
 			<xsl:apply-templates select="./child::node()"/>
 		</span>
-        <br xmlns="http://www.w3.org/1999/xhtml" />
+       <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
+	    <xsl:call-template name="br"/>
 	</xsl:template>
         
     <!-- Note with @xml:id -->
@@ -93,7 +98,10 @@
         <xsl:if test="./@rendition=$hyphenBeforeType and ./@break=$breakNoType">
             <!--<xsl:text disable-output-escaping="yes">&#45;</xsl:text>-->
             <span xmlns="http://www.w3.org/1999/xhtml" class="{$hyphenClass}">-</span>
-            <br xmlns="http://www.w3.org/1999/xhtml" class="{$breakNoClass}" />
+          <!--  <br xmlns="http://www.w3.org/1999/xhtml" class="{$breakNoClass}" />-->
+            <xsl:call-template name="brWithClass">
+                <xsl:with-param name="class" select="$breakNoClass"/>
+            </xsl:call-template>
         </xsl:if>
     </xsl:template>
     

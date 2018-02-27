@@ -5,6 +5,9 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all"
     version="2.0">
+    
+    <xsl:import href="global_config.xsl"/>
+    
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Jul 27, 2015</xd:p>
@@ -16,9 +19,9 @@
     <xsl:output method="html" encoding="UTF-8" indent="no"/>
     
     <xsl:strip-space elements="*"/>
-    
     <xsl:preserve-space elements="text"/>
-    <xsl:include href="global_config.xsl"/>
+    
+    <xsl:variable name="toHTML" select="true()"/> 
    
     <xsl:template match="/">
         <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>

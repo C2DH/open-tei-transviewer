@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta><title>TEI Transviewer Sample</title><link xmlns:tei="http://www.tei-c.org/ns/1.0" href="../../../transviewer/styles/transviewer.css" rel="stylesheet" type="text/css"></link><link xmlns:tei="http://www.tei-c.org/ns/1.0" href="../../../transviewer/templates/css/core/transcript_core.css" rel="stylesheet" type="text/css"></link><style xmlns:tei="http://www.tei-c.org/ns/1.0" type="text/css">html, body {height:100%; margin:0; overflow: hidden;</style></head><body class="sample" id="transviewer_sample_1"><div class="content-wrapper"><section id="BookReader" class="doc-part-fac"><img width="688" height="888" data-src="../media/images/transviewer-sample_1_001.jpg" src="#"></img><img width="686" height="887" data-src="../media/images/transviewer-sample_1_002.jpg" src="#"></img></section><section class="doc-part-text sample"><div id="text" class="text_img"><div class="transcript"><br class="change_page" id="page_1"></br><br class="change_page" id="page_2"></br></div></div></section></div><script xmlns:tei="http://www.tei-c.org/ns/1.0" type="text/javascript">
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta><title>TEI Transviewer Sample</title><link xmlns:tei="http://www.tei-c.org/ns/1.0" href="../../../transviewer/styles/transviewer.css" rel="stylesheet" type="text/css"></link><link xmlns:tei="http://www.tei-c.org/ns/1.0" href="../../../transviewer/templates/css/core/transcript_core.css" rel="stylesheet" type="text/css"></link><style xmlns:tei="http://www.tei-c.org/ns/1.0" type="text/css">html, body {height:100%; margin:0; overflow: hidden;</style></head><body class="sample" id="transviewer_sample_1"><div class="content-wrapper"><section id="BookReader" class="doc-part-fac"><img width="688" height="888" data-src="../media/images/transviewer-sample_1_001.jpg" src="#"></img><img width="686" height="887" data-src="../media/images/transviewer-sample_1_002.jpg" src="#"></img></section><section class="doc-part-text sample"><div id="text" class="text_img"><div class="transcript"><br class="change_page" id="page_1" /><br class="change_page" id="page_2" /></div></div></section></div><script xmlns:tei="http://www.tei-c.org/ns/1.0" type="text/javascript">
 				function loadJQueryPlugins() {
 						$.when(
 							
@@ -19,7 +19,9 @@
 								
 							).done(function() {
 								TransViewer.plugInRoot = '../../../transviewer/';
-								new TransViewer($('body'));
+								new TransViewer($('body'), {
+									language: 'en'
+								});
 							});
 						});
 				}

@@ -109,14 +109,59 @@
     <xsl:template match="//tei:lb[count(./@*)=0]">
         <xsl:choose>
             <xsl:when test="count(./following-sibling::*[1][name(.)='fw'])=1">
-                <br xmlns="http://www.w3.org/1999/xhtml"/>
+               <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
+                <xsl:call-template name="br"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:text disable-output-escaping="yes"> </xsl:text>
-                <br xmlns="http://www.w3.org/1999/xhtml" class="{$lbDelClass}"/>
+                <!-- <br xmlns="http://www.w3.org/1999/xhtml" class="{$lbDelClass}" /> -->
+                <xsl:call-template name="brWithClass">
+                    <xsl:with-param name="class" select="$lbDelClass"/>
+                </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
-        
+    </xsl:template>
+    
+    <!-- 'br' with no parameters -->
+    <xsl:template name="br">
+        <xsl:choose>
+            <xsl:when test="$toHTML=true()">
+                <xsl:value-of disable-output-escaping="yes">&lt;br /&gt;</xsl:value-of>
+            </xsl:when>
+            <xsl:otherwise>
+                <br xmlns="http://www.w3.org/1999/xhtml" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+   <!-- 'br' with parameter 'class' -->
+    <xsl:template name="brWithClass">
+        <xsl:param name="class"/>
+        <xsl:choose>
+            <xsl:when test="$toHTML=true()">
+                <xsl:value-of disable-output-escaping="yes">&lt;br class="</xsl:value-of><xsl:value-of select="$class"/><xsl:value-of disable-output-escaping="yes">" /&gt;</xsl:value-of>
+            </xsl:when>
+            <xsl:otherwise>
+                <br xmlns="http://www.w3.org/1999/xhtml" class="{$class}" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- 'br' with parameters 'class' and 'id' -->
+    <xsl:template name="brWithClassAndId">
+        <xsl:param name="class"/>
+        <xsl:param name="id"/>
+        <xsl:variable name="idNumber"><xsl:value-of><xsl:number level="any"/></xsl:value-of></xsl:variable>
+        <xsl:variable name="idPage">
+            <xsl:value-of select="concat($id,$idNumber)"/>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$toHTML=true()">
+                <xsl:value-of disable-output-escaping="yes">&lt;br class="</xsl:value-of><xsl:value-of select="$class"/><xsl:value-of disable-output-escaping="yes">" id="</xsl:value-of><xsl:value-of select="$idPage"/><xsl:value-of disable-output-escaping="yes">" /&gt;</xsl:value-of>
+            </xsl:when>
+            <xsl:otherwise>
+                <br xmlns="http://www.w3.org/1999/xhtml" class="$class" id="$idPage" />
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <!-- Table with no attributes -->
@@ -261,9 +306,13 @@
     
     <!-- Page break -->
     <xsl:template match="tei:pb">
-        <br xmlns="http://www.w3.org/1999/xhtml" class="change_page">
+        <xsl:call-template name="brWithClassAndId">
+            <xsl:with-param name="class" select="$changePageClass"/>
+            <xsl:with-param name="id" select="$pageIdPrefix"/>
+        </xsl:call-template>
+        <!--<br xmlns="http://www.w3.org/1999/xhtml" class="change_page">
             <xsl:attribute name="id">page_<xsl:number level="any"/></xsl:attribute>
-        </br> 
+        </br> -->
     </xsl:template>
     
     <!-- Text content-->

@@ -14,7 +14,7 @@
     
 	<xsl:output method="html" encoding="utf-8" indent="no"/> 
 
-	<xsl:include href="local_config.xsl"/>
+    <xsl:include href="local_config.xsl"/>
 
 	<xsl:template match="/">
 	    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>

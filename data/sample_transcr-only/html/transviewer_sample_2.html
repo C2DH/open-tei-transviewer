@@ -13,7 +13,9 @@
 								
 							).done(function() {
 								TransViewer.plugInRoot = '../../../transviewer/';
-								new TransViewer($('body'));
+								new TransViewer($('body'), {
+									language: 'en'
+								});
 							});
 						});
 				}

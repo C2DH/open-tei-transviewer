@@ -133,7 +133,7 @@ If omitted, the default language is English.
 
 Ex: <text xml:id="transviewer_sample_3" decls="#transcr-facs" type="sample" xml:lang="en">
 
-If the document is a facsimile only, it's possible to defined the language by changing the value of the lang variable 
+If the document is a facsimile only, it is possible to define the language by changing the value of the lang variable 
 in the templates/xslt/core/global_constants.xsl file
 
 Ex: <xsl:variable name="lang" select="'fr'"/>
