@@ -133,10 +133,10 @@ If omitted, the default language is English.
 
 Ex: <text xml:id="transviewer_sample_3" decls="#transcr-facs" type="sample" xml:lang="en">
 
-If the document is a facsimile only, it is possible to define the language by changing the value of the lang variable 
+The language can also be defined by changing the value of the interface_lang variable 
 in the templates/xslt/core/global_constants.xsl file
 
-Ex: <xsl:variable name="lang" select="'fr'"/>
+Ex: <xsl:variable name="interface_lang" select="'fr'"/>
 
 Available languages are: French (fr), English (en) and German (de).
 If you wish to add a new language, you need to create a new file in the resources folder with the iso code as name.
