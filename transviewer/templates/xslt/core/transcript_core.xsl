@@ -159,7 +159,7 @@
                 <xsl:text disable-output-escaping="yes">&lt;br class="</xsl:text><xsl:value-of select="$class"/><xsl:text disable-output-escaping="yes">" id="</xsl:text><xsl:value-of select="$idPage"/><xsl:text disable-output-escaping="yes">" /&gt;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
-                <br xmlns="http://www.w3.org/1999/xhtml" class="$class" id="$idPage" />
+                <br xmlns="http://www.w3.org/1999/xhtml" class="{$class}" id="{$idPage}" />
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
