@@ -125,7 +125,7 @@
     <xsl:template name="br">
         <xsl:choose>
             <xsl:when test="$toHTML=true()">
-                <xsl:value-of disable-output-escaping="yes">&lt;br /&gt;</xsl:value-of>
+                <xsl:text disable-output-escaping="yes">&lt;br /&gt;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <br xmlns="http://www.w3.org/1999/xhtml" />
@@ -138,7 +138,7 @@
         <xsl:param name="class"/>
         <xsl:choose>
             <xsl:when test="$toHTML=true()">
-                <xsl:value-of disable-output-escaping="yes">&lt;br class="</xsl:value-of><xsl:value-of select="$class"/><xsl:value-of disable-output-escaping="yes">" /&gt;</xsl:value-of>
+                <xsl:text disable-output-escaping="yes">&lt;br class="</xsl:text><xsl:value-of select="$class"/><xsl:text disable-output-escaping="yes">" /&gt;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <br xmlns="http://www.w3.org/1999/xhtml" class="{$class}" />
@@ -150,13 +150,13 @@
     <xsl:template name="brWithClassAndId">
         <xsl:param name="class"/>
         <xsl:param name="id"/>
-        <xsl:variable name="idNumber"><xsl:value-of><xsl:number level="any"/></xsl:value-of></xsl:variable>
+        <xsl:variable name="idNumber"><xsl:number level="any"/></xsl:variable>
         <xsl:variable name="idPage">
             <xsl:value-of select="concat($id,$idNumber)"/>
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="$toHTML=true()">
-                <xsl:value-of disable-output-escaping="yes">&lt;br class="</xsl:value-of><xsl:value-of select="$class"/><xsl:value-of disable-output-escaping="yes">" id="</xsl:value-of><xsl:value-of select="$idPage"/><xsl:value-of disable-output-escaping="yes">" /&gt;</xsl:value-of>
+                <xsl:text disable-output-escaping="yes">&lt;br class="</xsl:text><xsl:value-of select="$class"/><xsl:text disable-output-escaping="yes">" id="</xsl:text><xsl:value-of select="$idPage"/><xsl:text disable-output-escaping="yes">" /&gt;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <br xmlns="http://www.w3.org/1999/xhtml" class="$class" id="$idPage" />
