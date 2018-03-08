@@ -135,11 +135,11 @@
                <p>[Text text text text text text text text text text text text text text text text <lb/>text text text text text text text text text text text text]</p>
                <fw type="footer">
                   <note type="footnote" xml:id="fn1">
-                     <hi rend="superscript"><ref target="#na1">1</ref></hi> Footnote 1<lb/>
-                  </note>
+                     <hi rend="superscript"><ref target="#na1">1</ref></hi> [Footnote 1 text text text text] <name type="person">person name 1</name> [text text text] <date>date 2</date> [text text text text text <lb/>text text text text text text text text]
+                  </note><lb/>
                   <note type="footnote" xml:id="fn2">
-                     <hi rend="superscript"><ref target="#na2">2</ref></hi> Footnote 2<lb/>
-                  </note>
+                     <hi rend="superscript"><ref target="#na2">2</ref></hi> [Footnote 2 text text]
+                  </note><lb/>
                </fw>
                <fw type="footer" corresp="#confid_stat">CONFIDENTIAL</fw>
             </div>

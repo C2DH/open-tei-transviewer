@@ -71,7 +71,6 @@
     
     <!-- Entity names with no attributes -->
     <xsl:template match="//tei:name[count(./@*)=0]">
-       <!-- <xsl:template match="//tei:name[count(./@*)=0 and not(contains(./descendant-or-self::text(),'('))]">-->
         <span xmlns="http://www.w3.org/1999/xhtml" class="{name(.)}">
             <xsl:apply-templates select="./child::node()"/>
         </span>
@@ -106,14 +105,12 @@
     </xsl:template>
     
     <!-- Line break with no attributes -->
-    <xsl:template match="//tei:lb[count(./@*)=0]">
+    <xsl:template match="//tei:body//tei:lb[count(./@*)=0]">
         <xsl:choose>
-            <xsl:when test="count(./following-sibling::*[1][name(.)='fw'])=1">
-               <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
+            <xsl:when test="name(./parent::node())='fw'">
                 <xsl:call-template name="br"/>
             </xsl:when>
             <xsl:otherwise>
-                <!-- <br xmlns="http://www.w3.org/1999/xhtml" class="{$lbDelClass}" /> -->
                 <xsl:call-template name="brWithClass">
                     <xsl:with-param name="class" select="$lbDelClass"/>
                 </xsl:call-template>
@@ -310,9 +307,6 @@
             <xsl:with-param name="class" select="$changePageClass"/>
             <xsl:with-param name="id" select="$pageIdPrefix"/>
         </xsl:call-template>
-        <!--<br xmlns="http://www.w3.org/1999/xhtml" class="change_page">
-            <xsl:attribute name="id">page_<xsl:number level="any"/></xsl:attribute>
-        </br> -->
     </xsl:template>
     
     <!-- Text content-->

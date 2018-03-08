@@ -21,7 +21,6 @@
                 <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type}">
                     <xsl:apply-templates select="./child::node()"/>
                 </span>
-        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
         <xsl:call-template name="br"/>
     </xsl:template>
     
@@ -30,7 +29,6 @@
         <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type} {name(./@corresp)}{$sepAtt}{substring-after(./@corresp,$refTag)}">
             <xsl:apply-templates select="./child::node()"/>
         </span>
-        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
         <xsl:call-template name="br"/>
     </xsl:template>
     
@@ -39,7 +37,6 @@
         <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type} {name(./@corresp)}{$sepAtt}{substring-after(./@corresp,$refTag)}" id="{./@xml:id}">
             <xsl:apply-templates select="./child::node()"/>
         </span>
-        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
         <xsl:call-template name="br"/>
     </xsl:template>
     
@@ -48,7 +45,6 @@
         <span xmlns="http://www.w3.org/1999/xhtml" class="{./@type}" id="{./@xml:id}">
             <xsl:apply-templates select="./child::node()"/>
         </span>
-        <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
         <xsl:call-template name="br"/>
     </xsl:template>
     
@@ -59,7 +55,6 @@
 			<xsl:attribute name="style" select="concat('color: ', ./@rendition)" />
 			<xsl:apply-templates select="./child::node()"/>
 		</span>
-       <!-- <br xmlns="http://www.w3.org/1999/xhtml" /> -->
 	    <xsl:call-template name="br"/>
 	</xsl:template>
         
@@ -96,9 +91,7 @@
         A CSS should be applied (soft hyphen &#173; hard hyphen &#8208;)-->
     <xsl:template match="//tei:lb[count(./@*)=2 and count(./@rendition)=1 and count(./@break)=1]">
         <xsl:if test="./@rendition=$hyphenBeforeType and ./@break=$breakNoType">
-            <!--<xsl:text disable-output-escaping="yes">&#45;</xsl:text>-->
             <span xmlns="http://www.w3.org/1999/xhtml" class="{$hyphenClass}">-</span>
-          <!--  <br xmlns="http://www.w3.org/1999/xhtml" class="{$breakNoClass}" />-->
             <xsl:call-template name="brWithClass">
                 <xsl:with-param name="class" select="$breakNoClass"/>
             </xsl:call-template>
