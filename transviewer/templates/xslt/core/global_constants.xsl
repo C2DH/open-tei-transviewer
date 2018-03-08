@@ -14,12 +14,15 @@
     <!-- Extensions -->
     <xsl:param name="extJPG" select="'.jpg'"/>
     <xsl:param name="extXML" select="'.xml'"/>
+    
+    <!-- Global variables -->
+    <!-- Change the lang of the interface -->
+    <xsl:variable name="interface_lang" select="'en'"/>
       
     <!-- Global attribute values -->
     <xsl:variable name="textID" select="//tei:text/@xml:id"/>
     <xsl:variable name="textType" select="//tei:text/@type"/>
     <xsl:variable name="lang" select="//tei:text/@xml:lang"/>
-    <xsl:variable name="interface_lang" select="$lang"/>
     <xsl:variable name="pageIdPrefix" select="'page_'"/>
     
     <!-- Separators, delimiters and tags -->
