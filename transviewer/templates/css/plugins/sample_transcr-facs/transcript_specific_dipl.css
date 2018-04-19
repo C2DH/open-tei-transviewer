@@ -27,6 +27,7 @@ h1{
     text-align:center;
     font-size:medium;
     font-weight:normal;
+    color:black !important;
 }
 
 h2,
@@ -36,6 +37,7 @@ h4{
     text-align:left;
     font-size:medium;
     font-weight:normal;
+    color:black !important;
 }
 
 /* Paragraph */
