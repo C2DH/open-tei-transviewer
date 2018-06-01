@@ -1,12 +1,13 @@
 ReadMe - Open source TEI Transviewer 1.0
-Author(s): Florentina Armaselu
-Last updated: 17.11.2017
-------------------------------------
+Authors: Florentina Armaselu, Frédéric Reis
+Last updated: 19.04.2018
+Institution: Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg, https://www.c2dh.uni.lu/ 
+-------------------------------------
 
 CONTENTS
 
 1. Introduction
-2. Installation and testing (Windows) - Fred, should we add something for Linux?
+2. Installation and testing (Windows)
 3. Folders and files
 	3.1. data
 	3.2. transviewer
@@ -21,16 +22,14 @@ CONTENTS
 1. Introduction
 -------------------------------------
 
-
 TEI Transviewer is an interface intended to the exploration of primary and secondary sources, at the document level, in historical or other types of digital editions involving the representation of original material. Its name comes from the combination of the terms transformation and viewing, supposing the transformation of documents in XML-TEI format (directly in the browser or by means of a server/dedicated editor) so that they can be viewed in the browser.
 
-The Transviewer architecture is based on core / project-specific JS, CSS and XSLT modules allowing to accomodate both common elements, applying to many projects, as well as particularities to just one project. 
+The Transviewer architecture is based on core/project-specific JS, CSS and XSLT modules allowing to accommodate both common elements, applying to many projects, as well as particularities applying to just one project. 
 
 
 -------------------------------------
 2. Installation and testing (Windows)
 -------------------------------------
-
 
 For testing, install a cross-platform web server package, e.g. XAMPP the free Apache distribution (https://www.apachefriends.org/).
 
@@ -45,25 +44,24 @@ In the browser, type http://localhost/open-tei-transviewer/data/ to browse the T
 3. Folders and files
 -------------------------------------
 
-
-transviewer.js - main Transviewer module
-
 3.1. data
 
 TEI Transviewer samples, for three configurations: 
 - facsimile only (sample_facs-only)
 - transcription and facsimile (sample_transcr-facs)
-- transcription only (sample_transcr-only)
+- transcription only (sample_transcr-only).
 
 For each corresponding configuration, there is a common hierarchy of subfolders:
 
-html_saxonce - results of the xslt transformation using Saxon-CE
-media - images of the digitised facsimiles
-html - results of the xslt transformation without using Saxon-CE
-xml - files in XML-TEI format to be transfromed and visualised via the Transviwer
+html - Results of the xslt transformation without using Saxon-CE.
+html_saxonce - Results of the xslt transformation using Saxon-CE.
+media - Images of the digitised facsimiles.
+xml - Files in XML-TEI format to be transformed and visualised via the Transviwer.
 
 
 3.2. transviewer
+
+transviewer.js - main Transviewer module
 
 images - Transviewer icons
 
@@ -73,9 +71,9 @@ resources - Transviewer JS modules for multilingual support (DE, EN, FR)
 
 styles - Transviewer CSS stylesheets
 
-templates - Transviewer core and project-specific (plugins) CSS and XSLT stylesheets 
+templates - Transviewer core and project-specific (plugins) CSS and XSLT stylesheets. The modular structure should allow reuse, customisation and integration of new (project-specific) formatting/transformation features.
 
-core - CSS or XSLT applying to a larger number of project (e.g. most common XML structural elements or basic CSS formatting)
+core - CSS or XSLT applying to a larger number of project (e.g. transformation of the most common XML structural elements or basic CSS formatting).
 
 plugins - It may contain subfolders for each project requiring specific configurations. The name of the subfolder is the same with that of the project mentioned in the data folder (e.g. sample_transcr-facs). 
 
@@ -87,7 +85,6 @@ main - XSLT stylesheet transforming the XML-TEI directly in the browser (e.g. us
 -------------------------------------
 4. Licenses
 -------------------------------------
-
 
 jQuery 1.11.1: MIT License,  https://jquery.org/license/
 
@@ -110,7 +107,7 @@ TEI Transviewer 1.0: TBD.
 5. Current online version
 ------------------------------------- 
 
-The current online version of the Transviewer and our XML-TEI based collection can be accessed via the following link: https://www.cvce.eu/search?q=*&format=tei%2Bxml.
+The current online version of the Transviewer and our XML-TEI based collection can be accessed via the following link: https://www.cvce.eu/en/search?q=*&format=tei%2Bxml. The collection contains facsimile-only and transcription and facsimile documents. Check the box "Franco-British diplomatic games and issues within WEU (1954-1982)" to display only the list of documents provided with both transcription and facsimile.
 
 
 -------------------------------------
@@ -119,27 +116,24 @@ The current online version of the Transviewer and our XML-TEI based collection c
 
 6.1.  Specify the height and width attributes of images
 
-The width and height attributes of images should be manually specified in the xml file in order to keep the ratio of images.
-If omitted, the default width is 800px and default height is 1200px with a ratio of 2/3.
-Any units can be used for the values.
+The width and height attributes of images should be manually specified in the xml file in order to keep the ratio of images. If omitted, the default width is 800px and default height is 1200px with a ratio of 2/3. Any units can be used for the values.
 
 Ex: <graphic width="686px" height="889px" url="../media/images/transviewer-sample_3_001.jpg"/>
 
 
 6.2. Change the interface language
 
-The language of the Transviewer is defined by the xml:lang attribute of the text tag in the xml file.
-If omitted, the default language is English. 
+The language of a document is described by the @xml:lang attribute of the 'text' tag in the xml file.
 
 Ex: <text xml:id="transviewer_sample_3" decls="#transcr-facs" type="sample" xml:lang="en">
 
-The language can also be defined by changing the value of the interface_lang variable 
-in the templates/xslt/core/global_constants.xsl file
+The default language of the interface is English. It can be changed by changing the value of the 'interface_lang' variable in the templates/xslt/core/global_constants.xsl file.
 
 Ex: <xsl:variable name="interface_lang" select="'fr'"/>
 
-Available languages are: French (fr), English (en) and German (de).
-If you wish to add a new language, you need to create a new file in the resources folder with the iso code as name.
+For the change to be effective, the html files should be regenerated.
+
+Available languages are: French (fr), English (en) and German (de). If you wish to add a new language, you need to create a new file in the resources folder with the iso code as name.
 
 Ex: resources/es.js
  
@@ -147,3 +141,24 @@ Ex: resources/es.js
 -------------------------------------
 7. Cross-browser compatibility
 -------------------------------------
+
+7.1. Tested OS and browsers
+
+Transviewer was tested on Windows 7 Professional (64-bit), with the following browsers:
+- Firefox, 59.0
+- Google Chrome, 66.0
+- Internet Explorer, 11.0
+- Opera, 52.0.
+
+
+7.2. Issues
+
+Transviewer direct XML transformation using Saxon-CE does not work on Firefox. The Saxon-CE library generates a JavaScript error when it's added by an xslt 1.0 stylesheet. (Error: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable Saxonce.nocache.js).
+
+
+
+This could be an explanation: https://stackoverflow.com/questions/20778312/why-do-xslt-inserted-scripts-behave-like-asynchronous-in-firefox.
+
+
+
+A topic about the problem: https://saxonica.plan.io/boards/1/topics/5808.
