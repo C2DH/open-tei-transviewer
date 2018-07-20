@@ -100,7 +100,7 @@ Bookreader: AGPL v3 License, https://github.com/internetarchive/bookreader/blob/
 
 Saxon-CE 1.1: http://www.saxonica.com/license/license.xml: Mozilla Public License; Version 2.0, https://www.mozilla.org/en-US/MPL/2.0/
 
-TEI Transviewer 1.0: TBD.
+TEI Transviewer 1.0: AGPL v3 License, https://www.gnu.org/licenses/agpl.html.
 
 
 -------------------------------------
