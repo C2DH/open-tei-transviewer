@@ -1,4 +1,4 @@
-/*
+/*!
  * TEI Transviewer 1.0. Interface for online text and image visualisation.
  * Copyright (C) 2018, C2DH, University of Luxembourg,  Frédéric Reis
  *
