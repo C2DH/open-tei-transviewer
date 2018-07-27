@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
  TEI Transviewer 1.0. Interface for online text and image visualisation.
- Copyright (C) 2018, C2DH, University of Luxembourg,  Florentina Armaselu
+ Copyright (C) 2018, C2DH, University of Luxembourg, Frédéric Reis
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU Affero General Public License as

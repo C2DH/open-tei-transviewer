@@ -14,7 +14,8 @@
          <publicationStmt>
             <authority xml:base="https://www.c2dh.uni.lu/">Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg</authority>
             <availability>
-               <p>Distributed as part of the TEI Transviewer open source release</p>
+               <p>Copyright (C) 2018, C2DH, University of Luxembourg.</p>
+               <licence target="https://www.gnu.org/licenses/">Distributed as part of the TEI Transviewer open source release under a GNU Affero General Public License, version 3.</licence>
             </availability>
          </publicationStmt>
          <sourceDesc>

@@ -1,6 +1,6 @@
 ReadMe - Open source TEI Transviewer 1.0
 Authors: Florentina Armaselu, Frédéric Reis
-Last updated: 19.04.2018
+Last updated: 25.07.2018
 Institution: Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg, https://www.c2dh.uni.lu/ 
 -------------------------------------
 
@@ -17,6 +17,8 @@ CONTENTS
 	6.1. Specify the height and width attributes of images
 	6.2. Change the interface language
 7. Cross-browser compatibility
+	7.1. Tested OS and browsers
+	7.2. Issues
 
 -------------------------------------
 1. Introduction
@@ -73,7 +75,7 @@ styles - Transviewer CSS stylesheets
 
 templates - Transviewer core and project-specific (plugins) CSS and XSLT stylesheets. The modular structure should allow reuse, customisation and integration of new (project-specific) formatting/transformation features.
 
-core - CSS or XSLT applying to a larger number of project (e.g. transformation of the most common XML structural elements or basic CSS formatting).
+core - CSS or XSLT applying to a larger number of projects (e.g. transformation of the most common XML structural elements or basic CSS formatting).
 
 plugins - It may contain subfolders for each project requiring specific configurations. The name of the subfolder is the same with that of the project mentioned in the data folder (e.g. sample_transcr-facs). 
 
