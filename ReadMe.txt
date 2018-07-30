@@ -159,10 +159,6 @@ Transviewer was tested on Windows 7 Professional (64-bit), with the following br
 
 Transviewer direct XML transformation using Saxon-CE does not work on Firefox. The Saxon-CE library generates a JavaScript error when it's added by an xslt 1.0 stylesheet. (Error: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable Saxonce.nocache.js).
 
-
-
 This could be an explanation: https://stackoverflow.com/questions/20778312/why-do-xslt-inserted-scripts-behave-like-asynchronous-in-firefox.
-
-
 
 A topic about the problem: https://saxonica.plan.io/boards/1/topics/5808.
