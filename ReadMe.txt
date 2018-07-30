@@ -1,5 +1,5 @@
 ReadMe - Open source TEI Transviewer 1.0
-Authors: Florentina Armaselu, Frédéric Reis
+Authors: Florentina Armaselu, FrÃ©dÃ©ric Reis
 Last updated: 25.07.2018
 Institution: Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg, https://www.c2dh.uni.lu/ 
 -------------------------------------
@@ -82,6 +82,8 @@ plugins - It may contain subfolders for each project requiring specific configur
 main_to_html - XSLT stylesheet transforming the XML-TEI to HTML, outside the browser (e.g. via an XML Editor equipped with a XSLT processor).
 
 main - XSLT stylesheet transforming the XML-TEI directly in the browser (e.g. using Saxon-CE processor) or outside the browser to generate the corresponding HTML file. 
+
+main_plugin - XSLT stylesheet transforming the XML-TEI to HTML without including the standalone viewer. It can be used to integrate the viewer as plug-in in a website.
 
 
 -------------------------------------
