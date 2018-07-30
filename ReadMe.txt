@@ -83,7 +83,7 @@ main_to_html - XSLT stylesheet transforming the XML-TEI to HTML, outside the bro
 
 main - XSLT stylesheet transforming the XML-TEI directly in the browser (e.g. using Saxon-CE processor) or outside the browser to generate the corresponding HTML file. 
 
-main_plugin - XSLT stylesheet transforming the XML-TEI to HTML without including the standalone viewer. It can be used to integrate the viewer as plug-in in a website.
+main_plugin - XSLT stylesheet transforming the XML-TEI to HTML without including the standalone viewer. It can be used to integrate the viewer as a plug-in in a website.
 
 
 -------------------------------------
