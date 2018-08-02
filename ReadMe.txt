@@ -1,6 +1,6 @@
 ReadMe - Open source TEI Transviewer 1.0
 Authors: Florentina Armaselu, Frédéric Reis
-Last updated: 25.07.2018
+Last updated: 02.08.2018
 Institution: Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg, https://www.c2dh.uni.lu/ 
 -------------------------------------
 
