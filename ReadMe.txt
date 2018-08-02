@@ -26,6 +26,13 @@ CONTENTS
 
 TEI Transviewer is an interface intended to the exploration of primary and secondary sources, at the document level, in historical or other types of digital editions involving the representation of original material. Its name comes from the combination of the terms transformation and viewing, supposing the transformation of documents in XML-TEI format (directly in the browser or by means of a server/dedicated editor) so that they can be viewed in the browser.
 
+Features:
+- side-by-side and single view of transcription and digital facsimile,
+- synchronised scrolling and zooming, 
+- page and structural navigation, 
+- linear and diplomatic transcription view, 
+- free text search and search by categories of named entities (persons, organisations, places, dates, etc.).
+
 The Transviewer architecture is based on core/project-specific JS, CSS and XSLT modules allowing to accommodate both common elements, applying to many projects, as well as particularities applying to just one project. 
 
 
