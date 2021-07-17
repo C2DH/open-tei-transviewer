@@ -178,7 +178,7 @@ A topic about the problem: https://saxonica.plan.io/boards/1/topics/5808.
 8. How to cite the Transviewer software
 -------------------------------------
 
-Armaselu, F. Reis, F. Jones, C. Wieneke, L. Berettoni, A. Alzetta, C. Hingray, E. Piticco, M. C. Cooper, S. Guido, D. (2018). TEI Transviewer. https://orbilu.uni.lu/handle/10993/36992.
+Armaselu, F. Reis, F. Jones, C. Wieneke, L. Berettoni, A. Alzetta, C. Hingray, E. Piticco, M. C. Cooper, S. Guido, D. (2018). TEI Transviewer. Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg. https://orbilu.uni.lu/handle/10993/36992.
 
-Armaselu, F. Reis, F. (2018). Open TEI Transviewer. https://github.com/C2DH/open-tei-transviewer.
+Armaselu, F. Reis, F. (2018). Open TEI Transviewer. Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg. https://github.com/C2DH/open-tei-transviewer.
 
