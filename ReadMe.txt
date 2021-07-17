@@ -36,7 +36,7 @@ Features:
 
 The Transviewer architecture is based on core/project-specific JS, CSS and XSLT modules allowing to accommodate both common elements, applying to many projects, as well as particularities applying to just one project. 
 
-Two versions of the Transviewer software are available: (1) online, server-based (section 5); (2) open source (sections 2-4, 6 and 7).
+Two versions of the Transviewer software are available: (1) online, server-based (section 5); (2) open source adaptation (sections 2-4, 6 and 7).
 
 
 -------------------------------------
