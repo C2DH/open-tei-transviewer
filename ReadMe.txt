@@ -1,6 +1,6 @@
 ReadMe - Open source TEI Transviewer 1.0
 Authors: Florentina Armaselu, Frédéric Reis
-Last updated: 02.08.2018
+Last updated: 17.07.2021
 Institution: Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg, https://www.c2dh.uni.lu/ 
 -------------------------------------
 
@@ -12,13 +12,14 @@ CONTENTS
 	3.1. data
 	3.2. transviewer
 4. Licenses
-5. Current online version
+5. Current online (server-based) version
 6. Specific instructions
 	6.1. Specify the height and width attributes of images
 	6.2. Change the interface language
 7. Cross-browser compatibility
 	7.1. Tested OS and browsers
 	7.2. Issues
+8. How to cite the Transviewer software
 
 -------------------------------------
 1. Introduction
@@ -34,6 +35,8 @@ Features:
 - free text search and search by categories of named entities (persons, organisations, places, dates, etc.).
 
 The Transviewer architecture is based on core/project-specific JS, CSS and XSLT modules allowing to accommodate both common elements, applying to many projects, as well as particularities applying to just one project. 
+
+Two versions of the Transviewer software are available: (1) online, server-based (section 5); (2) open source (sections 2-4, 6 and 7).
 
 
 -------------------------------------
@@ -115,10 +118,10 @@ TEI Transviewer 1.0: AGPL v3 License, https://www.gnu.org/licenses/agpl.html.
 
 
 -------------------------------------
-5. Current online version
+5. Current online (server-based) version
 ------------------------------------- 
 
-The current online version of the Transviewer and our XML-TEI based collection can be accessed via the following link: https://www.cvce.eu/en/search?q=*&format=tei%2Bxml. The collection contains facsimile-only and transcription and facsimile documents. Check the box "Franco-British diplomatic games and issues within WEU (1954-1982)" to display only the list of documents provided with both transcription and facsimile.
+The current online (server-based) version of the Transviewer and our XML-TEI based collection can be accessed via the following link: https://www.cvce.eu/en/search?q=*&format=tei%2Bxml. The collection contains facsimile-only and transcription and facsimile documents. Check the box "Franco-British diplomatic games and issues within WEU (1954-1982)" to display only the list of documents provided with both transcription and facsimile.
 
 
 -------------------------------------
@@ -169,3 +172,13 @@ Transviewer direct XML transformation using Saxon-CE does not work on Firefox. T
 This could be an explanation: https://stackoverflow.com/questions/20778312/why-do-xslt-inserted-scripts-behave-like-asynchronous-in-firefox.
 
 A topic about the problem: https://saxonica.plan.io/boards/1/topics/5808.
+
+
+-------------------------------------
+8. How to cite the Transviewer software
+-------------------------------------
+
+Armaselu, F. Reis, F. Jones, C. Wieneke, L. Berettoni, A. Alzetta, C. Hingray, E. Piticco, M. C. Cooper, S. Guido, D. (2018). TEI Transviewer. https://orbilu.uni.lu/handle/10993/36992.
+
+Armaselu, F. Reis, F. (2018). Open TEI Transviewer. https://github.com/C2DH/open-tei-transviewer.
+
