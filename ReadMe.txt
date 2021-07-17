@@ -121,7 +121,7 @@ TEI Transviewer 1.0: AGPL v3 License, https://www.gnu.org/licenses/agpl.html.
 5. Current online (server-based) version
 ------------------------------------- 
 
-The current online (server-based) version of the Transviewer and our XML-TEI based collection can be accessed via the following link: https://www.cvce.eu/en/search?q=*&format=tei%2Bxml. The collection contains facsimile-only and transcription and facsimile documents. Check the box "Franco-British diplomatic games and issues within WEU (1954-1982)" to display only the list of documents provided with both transcription and facsimile.
+The current online (server-based) version of the Transviewer and our XML-TEI collection can be accessed via the following link: https://www.cvce.eu/en/search?q=*&format=tei%2Bxml. The collection contains facsimile-only and transcription and facsimile documents. Check the box "Franco-British diplomatic games and issues within WEU (1954-1982)" to display only the list of documents provided with both transcription and facsimile.
 
 
 -------------------------------------
