@@ -1,6 +1,6 @@
 ReadMe - Open source TEI Transviewer 1.0
 Authors: Florentina Armaselu, Frédéric Reis
-Last updated: 17.07.2021
+Last updated: 20.10.2026
 Institution: Luxembourg Centre for Contemporary and Digital History (C2DH), University of Luxembourg, https://www.c2dh.uni.lu/ 
 -------------------------------------
 
@@ -121,7 +121,7 @@ Open TEI Transviewer 1.0: AGPL v3 License, https://www.gnu.org/licenses/agpl.htm
 5. Current online (server-based) version
 ------------------------------------- 
 
-The current online (server-based) version of the Transviewer and our CVCE.EU by UNI.LU XML-TEI collection can be accessed via the following link: https://www.cvce.eu/en/search?q=*&format=tei%2Bxml. The collection contains facsimile-only and transcription and facsimile documents. Check the box "Franco-British diplomatic games and issues within WEU (1954-1982)" to display only the list of documents provided with both transcription and facsimile.
+The current online (server-based) version of the Transviewer and our CVCE.EU by UNI.LU XML-TEI collection can be accessed via the following link: https://www.cvce.eu/en/search?q=*&format=tei%2Bxml. The collection contains facsimile-only and transcription and facsimile documents (French). Check the box "Franco-British diplomatic games and issues within WEU (1954-1982)" and select FR from the language tab (top left) to display the list of documents that can be visualised using the transcription and facsimile modes in the Transviewer.
 
 
 -------------------------------------
